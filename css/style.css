@@ -54,6 +54,12 @@ nav ul {
     gap: 20px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
 /*hero*/
 #hero {
     padding: 40px 0;
@@ -214,8 +220,3 @@ footer {
     }
 }
 
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
