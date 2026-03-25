@@ -34,9 +34,15 @@ header {
     background: #111;
     color: white;
     padding: 20px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+}
+
+body {
+    padding-top: 80px; /* dopasuj do wysokości headera */
 }
 
 header .container {
