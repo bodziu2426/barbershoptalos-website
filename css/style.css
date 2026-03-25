@@ -89,6 +89,17 @@ nav ul li a {
     cursor: pointer;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*hero*/
 #hero {
     padding: 200px 0;

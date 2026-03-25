@@ -14,4 +14,21 @@ document.addEventListener('click', (event) => {
     if (!clickedInsideMenu && !clickedHamburger) {
         navMenu.classList.remove('open');
     }
-});
+})
+
+// Scroll/fade animation
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active'); 
+        }
+    });
+}, { threshold: 0.15 });
+
+reveals.forEach(el => observer.observe(el));
+
+;
