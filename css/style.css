@@ -210,14 +210,6 @@ footer {
 
     nav ul {
         display: flex !important;
-        flex-direction: column;
-        background: #111;
-        padding: 20px;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        z-index: 9;
     }
 
     .hamburger {
