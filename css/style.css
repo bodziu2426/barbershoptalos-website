@@ -209,7 +209,15 @@ footer {
     }
 
     nav ul {
-        display: flex !important;
+        display: none;
+        flex-direction: column;
+        background: #111;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        z-index: 9;
     }
 
     .hamburger {
@@ -221,3 +229,55 @@ footer {
     }
 }
 
+/* TO DODAJ POD MEDIA QUERY */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    #hero {
+        padding: 100px 0;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    #services li {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    #barbers .container {
+        grid-template-columns: 1fr;
+    }
+
+    #gallery .container {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        display: flex !important;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+}
+nav ul.open {
+    display: flex !important;
+}
