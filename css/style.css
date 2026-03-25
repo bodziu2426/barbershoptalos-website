@@ -230,6 +230,19 @@ footer {
     padding: 20px 0;
 }
 
+/* ANIMACJA OTWIERANIA MENU MOBILNEGO */
+nav ul {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+nav ul.open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 /* RESPONSYWNOŚĆ — TELEFONY */
 @media (max-width: 768px) {
 
