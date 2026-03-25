@@ -230,18 +230,6 @@ footer {
     padding: 20px 0;
 }
 
-/* ANIMACJA OTWIERANIA MENU MOBILNEGO 
-nav ul {
-    transform: translateY(-20px);
-    opacity: 0;
-    transition: transform 1.5s ease, opacity 1.5s ease;
-}
-
-nav ul.open {
-    transform: translateY(0);
-    opacity: 1;
-}*/
-
 
 /* RESPONSYWNOŚĆ — TELEFONY */
 @media (max-width: 768px) {
@@ -290,6 +278,15 @@ nav ul.open {
         right: 0;
         width: 200px;
         z-index: 9;
+        /* ANIMACJA OTWIERANIA MENU MOBILNEGO */
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: transform 1.5s ease, opacity 1.5s ease;
+    }
+    /* ANIMACJA OTWIERANIA MENU MOBILNEGO */
+    nav ul.open {
+    transform: translateY(0);
+    opacity: 1;
     }
 
     .hamburger {
