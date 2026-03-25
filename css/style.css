@@ -86,7 +86,7 @@ nav ul {
 
 /*hero*/
 #hero {
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
     background: #222;
     color: white;
@@ -119,7 +119,7 @@ nav ul {
 
 #hero {
   position: relative;
-  background-image: url('img/image_1_hero.jpg');
+  background-image: url('../img/image_1_hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
