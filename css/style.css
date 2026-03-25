@@ -55,6 +55,7 @@ header a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .logo {
@@ -76,6 +77,10 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+}
+
+nav ul li a {
+  font-size: 18px; /* adjust as needed */
 }
 
 .hamburger {
