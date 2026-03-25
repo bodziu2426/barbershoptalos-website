@@ -209,7 +209,7 @@ footer {
     }
 
     nav ul {
-        display: none;
+        display: flex !important;
         flex-direction: column;
         background: #111;
         padding: 20px;
