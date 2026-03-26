@@ -356,7 +356,7 @@ footer {
         max-width: 90%;
         margin: 0 auto;
     }
-}
+
 
     #services li {
         flex-direction: column;
@@ -396,20 +396,22 @@ footer {
         transition: transform 1.5s ease, opacity 1.5s ease;
     }
 
-    /* ANIMACJA OTWIERANIA MENU MOBILNEGO */
-    nav ul.open {
-    transform: translateY(0);
-    opacity: 1;
+        /* ANIMACJA OTWIERANIA MENU MOBILNEGO */
+        nav ul.open {
+        transform: translateY(0);
+        opacity: 1;
+        }
+
+        .hamburger {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: -20px;
+            z-index: 10;
+        }
     }
 
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: -20px;
-        z-index: 10;
-    }
-}
+
 
 nav ul.open {
     display: flex !important;
