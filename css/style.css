@@ -113,11 +113,13 @@ nav ul li a {
 #hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 #hero p {
     font-size: 20px;
     margin-bottom: 30px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 #hero a {
@@ -327,7 +329,7 @@ footer {
     #gallery .container {
         grid-template-columns: 1fr;
     }
-    
+
     .gallery-grid img,
     .gallery-grid img.tall,
     .gallery-grid img.wide {
