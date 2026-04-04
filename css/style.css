@@ -194,23 +194,48 @@ nav ul li a {
 /*Services*/
 #services {
     background:  #ffffff;
+    padding: 80px 0;
 }
-#services ul {
-    list-style: none;
+.price-category {
+    margin-bottom: 50px;
+    text-align: left;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#services li {
+.price-category h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #c59d5f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-category li {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
     font-size: 18px;
 }
 
-#services li:last-child {
+.price-category li span {
+    color: #333;
+}
+
+.price-category li strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.price-category li:last-child {
     border-bottom: none;
 }
 
@@ -358,10 +383,10 @@ footer {
     }
 
 
-    #services li {
+    .price-category li {
         flex-direction: column;
         text-align: center;
-        gap: 5px;
+        gap: 6px;
     }
 
     #barbers .container {
