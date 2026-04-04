@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 * {
     margin: 0;
@@ -207,7 +208,7 @@ nav ul li a {
 }
 
 .price-category h3 {
-    font-family: 'UnifrakturCook', cursive;
+    font-family: 'Cinzel Decorative', serif;
     font-size: 26px;
     margin-bottom: 20px;
     color: #b98f3e;
