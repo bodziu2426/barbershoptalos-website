@@ -87,7 +87,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-size: 24px; /* adjust as needed */
+  font-size: 22px; /* adjust as needed */
 }
 
 .hamburger {
@@ -116,13 +116,13 @@ nav ul li a {
 }
 
 #hero h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 20px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 #hero p {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 30px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
