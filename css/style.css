@@ -58,6 +58,7 @@ header .container {
     align-items: center;
 }
 
+/*String next to logo - deactivated fn*/
 header a {
     color: white;
     text-decoration: none;
@@ -71,6 +72,7 @@ header a {
     gap: 10px;
 }
 
+/*Logo size*/
 .logo img {
     height: 80px;
     width: auto;
@@ -80,14 +82,16 @@ nav {
     position: relative;
 }
 
+/**/
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
+/*Header text font size*/
 nav ul li a {
-  font-size: 22px; /* adjust as needed */
+  font-size: 20px; /* adjust as needed */
 }
 
 .hamburger {
