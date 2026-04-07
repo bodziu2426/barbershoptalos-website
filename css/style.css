@@ -37,7 +37,7 @@ h2 {
 header {
     background: #010005;
     color: white;
-    height: 80px;
+    height: 75px;
     padding: 0px 0;
     position: fixed;
     top: 0;
@@ -48,7 +48,7 @@ header {
 }
 
 body {
-    padding-top: 80px; /* dopasuj do wysokości headera */
+    padding-top: 75px; /* dopasuj do wysokości headera */
 }
 
 header .container {
@@ -74,7 +74,7 @@ header a {
 
 /*Logo size*/
 .logo img {
-    height: 80px;
+    height: 75px;
     width: auto;
 }
 
@@ -91,7 +91,7 @@ nav ul {
 
 /*Header text font size*/
 nav ul li a {
-  font-size: 20px; /* adjust as needed */
+  font-size: 18px; /* adjust as needed */
 }
 
 .hamburger {
