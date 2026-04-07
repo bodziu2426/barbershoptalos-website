@@ -348,6 +348,15 @@ nav ul li a {
     background: #ffffff;
 }
 
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
 footer {
     background: #111;
     color: white;
