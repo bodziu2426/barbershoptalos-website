@@ -31,4 +31,30 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => observer.observe(el));
 
+// Slider opinii
+const reviews = document.querySelectorAll('.review');
+const dots = document.querySelectorAll('.dot');
+let currentReview = 0;
+
+function showReview(index) {
+    reviews.forEach(r => r.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+
+    reviews[index].classList.add('active');
+    dots[index].classList.add('active');
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentReview = index;
+        showReview(index);
+    });
+});
+
+// Auto-slide co 5 sekund
+setInterval(() => {
+    currentReview = (currentReview + 1) % reviews.length;
+    showReview(currentReview);
+}, 5000);
+
 ;

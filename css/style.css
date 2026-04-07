@@ -339,8 +339,60 @@ nav ul li a {
 }
 
 /*reviews*/
-#reviews {
-    background: #e7e7e7;
+/* PREMIUM REVIEWS */
+.reviews-slider {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.review {
+    display: none;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+    transition: opacity 0.5s ease;
+}
+
+.review.active {
+    display: block;
+    opacity: 1;
+}
+
+.review p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.review h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c59d5f;
+}
+
+/* dots */
+.reviews-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reviews-nav .dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reviews-nav .dot.active {
+    background: #c59d5f;
+    transform: scale(1.2);
 }
 
 /*contact*/
