@@ -147,7 +147,7 @@ nav ul li a:hover {
 ══════════════════════════════════════════════ */
 #hero {
     position: relative;
-    height: 90vh;
+    height: 85vh;
     min-height: 420px;
     overflow: hidden;
     display: flex;
