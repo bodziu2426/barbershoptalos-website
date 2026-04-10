@@ -36,23 +36,26 @@ const dots = document.querySelectorAll('.dot');
 let currentReview = 0;
 
 function showReview(index) {
-    reviews.forEach(r => r.classList.remove('active'));
+    reviews.forEach(r => {
+        r.style.display = 'none';
+        r.classList.remove('active');
+    });
     dots.forEach(d => d.classList.remove('active'));
+    reviews[index].style.display = 'block';
     reviews[index].classList.add('active');
     dots[index].classList.add('active');
+    currentReview = index;
 }
 
 dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        currentReview = index;
-        showReview(index);
-    });
+    dot.addEventListener('click', () => showReview(index));
 });
 
 setInterval(() => {
-    currentReview = (currentReview + 1) % reviews.length;
-    showReview(currentReview);
+    showReview((currentReview + 1) % reviews.length);
 }, 5000);
+
+showReview(0);
 
 // ── HERO SLIDER ──────────────────────────────
 const heroSlides  = document.querySelectorAll('.hero-slide');
