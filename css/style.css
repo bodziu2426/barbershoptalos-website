@@ -10,7 +10,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #222;
+    color: #e8e8e8;
+    background: #111111;
 }
 .container {
     width: 90%;
@@ -31,11 +32,12 @@ h2 {
     font-size: 32px;
     margin-bottom: 30px;
     text-align: center;
+        color: #e8e8e8;
 }
 
 /*header*/
 header {
-    background: #010005;
+    background: #0a0a0a;
     color: white;
     height: 75px;
     padding: 0px 0;
@@ -44,7 +46,8 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #2e2e2e;
 }
 
 body {
@@ -60,10 +63,15 @@ header .container {
 
 /*String next to logo - deactivated fn*/
 header a {
-    color: white;
+    color: #e8e8e8;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+        transition: color 0.3s;
+}
+
+header a:hover {
+    color: #c59d5f;
 }
 
 .logo {
@@ -91,13 +99,21 @@ nav ul {
 
 /*Header text font size*/
 nav ul li a {
-  font-size: 18px; /* adjust as needed */
+    font-size: 18px;
+    color: #e8e8e8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c59d5f;
 }
 
 .hamburger {
     display: none;
     font-size: 28px;
     cursor: pointer;
+    color: #e8e8e8;
 }
 
 .reveal {
@@ -115,21 +131,40 @@ nav ul li a {
 #hero {
     padding: 200px 0;
     text-align: center;
-    background: #222;
+    background: #111;
     color: white;
+    position: relative;
+    background-image: url('../img/image_1_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#hero > * {
+    position: relative;
+    z-index: 2;
 }
 
 #hero h1 {
     font-family: 'Cinzel Decorative', serif;
     font-size: 60px;
     margin-bottom: 20px;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
 }
 
 #hero p {
     font-size: 24px;
     margin-bottom: 30px;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+        color: #ccc;
 }
 
 #hero a {
@@ -140,38 +175,17 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
+    transition: background 0.3s;
 }
 
 #hero a:hover{
     background: #9c7b45;
-    transition: 0.3s;
-}
-
-#hero {
-  position: relative;
-  background-image: url('../img/image_1_hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* 50% opacity overlay */
-  z-index: 1;
-}
-
-#hero > * {
-  position: relative;
-  z-index: 2; /* keeps your text above the overlay */
 }
 
 
 /*about*/
 #about {
-    background: #e7e7e7;
+    background: #1a1a1a;
 }
 
 .about-wrapper {
@@ -187,23 +201,25 @@ nav ul li a {
 
 .about-text h2 {
     margin-bottom: 20px;
+    color: #e8e8e8;
 }
 
 .about-text p {
     font-size: 18px;
     line-height: 1.7;
+    color: #bbbbbb;
 }
 
 .about-photo img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
     object-fit: cover;
 }
 
 /*Services*/
 #services {
-    background:  #ffffff;
+    background: #111111;
     padding: 80px 0;
 }
 .price-category {
@@ -218,7 +234,7 @@ nav ul li a {
     font-family: 'Cinzel Decorative', serif;
     font-size: 26px;
     margin-bottom: 20px;
-    color: #b98f3e;
+    color: #c59d5f;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -233,16 +249,16 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     padding: 14px 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #2e2e2e;
     font-size: 18px;
 }
 
 .price-category li span {
-    color: #333;
+    color: #bbbbbb;
 }
 
 .price-category li strong {
-    color: #000;
+    color: #c59d5f;
     font-weight: bold;
 }
 
@@ -252,7 +268,7 @@ nav ul li a {
 
 /*barbers*/
 #barbers {
-    background: #e7e7e7;
+    background: #1a1a1a;
 }
 
 /* Nagłówek na całą szerokość siatki */
@@ -270,16 +286,17 @@ nav ul li a {
 
 #barbers article {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #2e2e2e;
     border-radius: 10px;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background: #1f1f1f;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
     transition: 0.3s;
 }
 
 #barbers article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 30px rgba(197,157,95,0.15);
+    border-color: #c59d5f;
 }
 
 /* Zdjęcie barbera */
@@ -294,12 +311,26 @@ nav ul li a {
 /* Imię barbera */
 #barbers article h3 {
     font-size: 22px;
+    margin-bottom: 8px;
+    color: #e8e8e8;
+}
+
+#barbers article h4 {
+    color: #c59d5f;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+#barbers article p {
+    color: #999;
+    font-size: 15px;
 }
 
 /*gallery*/
 #gallery {
-    background: #ffffff;
+    background: #111111;
 }
 
 #gallery .container {
@@ -325,7 +356,7 @@ nav ul li a {
 /* Efekt powiększenia */
 .gallery-grid img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 30px rgba(197,157,95,0.25);
 }
 
 /* Nieregularne kafelki */
@@ -340,6 +371,10 @@ nav ul li a {
 
 /*reviews*/
 /* PREMIUM REVIEWS */
+#reviews {
+    background: #1a1a1a;
+}
+
 .reviews-slider {
     max-width: 700px;
     margin: 0 auto;
@@ -348,10 +383,11 @@ nav ul li a {
 
 .review {
     display: none;
-    background: white;
+    background: #1f1f1f;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
     transition: opacity 0.5s ease;
 }
 
@@ -364,7 +400,7 @@ nav ul li a {
     font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
-    color: #444;
+    color: #bbbbbb;
 }
 
 .review h4 {
@@ -384,7 +420,7 @@ nav ul li a {
 .reviews-nav .dot {
     width: 12px;
     height: 12px;
-    background: #ccc;
+    background: #333;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s;
@@ -397,7 +433,18 @@ nav ul li a {
 
 /*contact*/
 #contact {
-    background: #ffffff;
+    background: #111111;
+}
+
+#contact p {
+    color: #bbbbbb;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+#contact h3 {
+    color: #e8e8e8;
+    margin: 30px 0 15px;
 }
 
 .map-container {
@@ -406,14 +453,16 @@ nav ul li a {
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    border: 1px solid #2e2e2e;
 }
 
 footer {
-    background: #111;
-    color: white;
+    background: #0a0a0a;
+    color: #666;
     text-align: center;
     padding: 20px 0;
+    border-top: 1px solid #2e2e2e;
 }
 
 
@@ -480,17 +529,17 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background: #111;
+        background: #0a0a0a;
+        border: 1px solid #2e2e2e;
         padding: 20px;
         position: absolute;
         top: 60px;
         right: 0;
         width: 200px;
         z-index: 9;
-        /* ANIMACJA OTWIERANIA MENU MOBILNEGO */
         transform: translateY(-20px);
         opacity: 0;
-        transition: transform 1.5s ease, opacity 1.5s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
         /* ANIMACJA OTWIERANIA MENU MOBILNEGO */
