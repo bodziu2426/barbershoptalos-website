@@ -31,54 +31,51 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(el => observer.observe(el));
 
 // ── REVIEWS SLIDER ───────────────────────────
-const reviewCards = document.querySelectorAll('.reviews-slider .review');
-const reviewDots  = document.querySelectorAll('.reviews-nav .dot');
+const reviews = document.querySelectorAll('.review');
+const dots = document.querySelectorAll('.dot');
 let currentReview = 0;
 
 function showReview(index) {
-    reviewCards.forEach(r => r.classList.remove('active'));
-    reviewDots.forEach(d => d.classList.remove('active'));
-    reviewCards[index].classList.add('active');
-    reviewDots[index].classList.add('active');
-    currentReview = index;
+    reviews.forEach(r => r.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    reviews[index].classList.add('active');
+    dots[index].classList.add('active');
 }
 
-reviewDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => showReview(index));
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentReview = index;
+        showReview(index);
+    });
 });
 
 setInterval(() => {
-    showReview((currentReview + 1) % reviewCards.length);
+    currentReview = (currentReview + 1) % reviews.length;
+    showReview(currentReview);
 }, 5000);
 
-showReview(0);
-
 // ── HERO SLIDER ──────────────────────────────
-const heroSlides    = document.querySelectorAll('.hero-slide');
-const heroTexts     = document.querySelectorAll('.hero-slide-text');
-const heroDots      = document.querySelectorAll('.hero-dot');
-const progressBar   = document.querySelector('.hero-progress-bar');
+const heroSlides  = document.querySelectorAll('.hero-slide');
+const heroTexts   = document.querySelectorAll('.hero-slide-text');
+const heroDots    = document.querySelectorAll('.hero-dot');
+const progressBar = document.querySelector('.hero-progress-bar');
 
-const SLIDE_DURATION = 5000; // ms per slide
+const SLIDE_DURATION = 5000;
 let currentHeroSlide = 0;
 let heroTimer = null;
 
 function showHeroSlide(index) {
-    // Remove active from all
     heroSlides.forEach(s => s.classList.remove('active'));
     heroTexts.forEach(t => t.classList.remove('active'));
     heroDots.forEach(d => d.classList.remove('active'));
 
-    // Activate new slide
     heroSlides[index].classList.add('active');
     heroTexts[index].classList.add('active');
     heroDots[index].classList.add('active');
 
-    // Reset & animate progress bar
     progressBar.style.transition = 'none';
     progressBar.style.width = '0%';
 
-    // Small delay so the reset is rendered before animation starts
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
             progressBar.style.transition = `width ${SLIDE_DURATION}ms linear`;
@@ -97,16 +94,14 @@ function startHeroTimer() {
     heroTimer = setInterval(nextHeroSlide, SLIDE_DURATION);
 }
 
-// Dot click — jump to slide
 heroDots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         currentHeroSlide = index;
         showHeroSlide(currentHeroSlide);
-        startHeroTimer(); // reset timer on manual click
+        startHeroTimer();
     });
 });
 
-// Kick everything off
 showHeroSlide(0);
 startHeroTimer();
 
@@ -114,11 +109,7 @@ startHeroTimer();
 const scrollTopBtn = document.getElementById('scrollTop');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-        scrollTopBtn.classList.add('visible');
-    } else {
-        scrollTopBtn.classList.remove('visible');
-    }
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
 });
 
 scrollTopBtn.addEventListener('click', () => {
@@ -129,9 +120,8 @@ scrollTopBtn.addEventListener('click', () => {
 const lightbox      = document.getElementById('lightbox');
 const lightboxImg   = document.getElementById('lightbox-img');
 const lightboxClose = document.getElementById('lightbox-close');
-const galleryImgs   = document.querySelectorAll('.gallery-grid img');
 
-galleryImgs.forEach(img => {
+document.querySelectorAll('.gallery-grid img').forEach(img => {
     img.addEventListener('click', () => {
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
@@ -146,11 +136,5 @@ function closeLightbox() {
 }
 
 lightboxClose.addEventListener('click', closeLightbox);
-
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeLightbox();
-});
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
