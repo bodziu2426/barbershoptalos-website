@@ -564,25 +564,11 @@ nav ul li a:hover {
 .review {
     display: none;
     background: #1f1f1f;
-    padding: 50px 40px 40px;
+    padding: 40px;
     border-radius: 10px;
     border: 1px solid #2e2e2e;
     box-shadow: 0 4px 30px rgba(0,0,0,0.3);
     transition: opacity 0.5s ease;
-    position: relative;
-}
-
-.review::before {
-    content: '\201C';
-    font-family: Georgia, serif;
-    font-size: 100px;
-    color: #c59d5f;
-    opacity: 0.25;
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    line-height: 1;
-    pointer-events: none;
 }
 
 .review.active {
@@ -598,18 +584,9 @@ nav ul li a:hover {
 }
 
 .review h4 {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
     color: #c59d5f;
-}
-
-.review-stars {
-    color: #c59d5f;
-    font-size: 16px;
-    letter-spacing: 3px;
-    margin-bottom: 16px;
 }
 
 .reviews-nav {
