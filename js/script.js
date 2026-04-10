@@ -31,28 +31,27 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(el => observer.observe(el));
 
 // ── REVIEWS SLIDER ───────────────────────────
-const reviews = document.querySelectorAll('.review');
-const dots = document.querySelectorAll('.dot');
+const reviewCards = document.querySelectorAll('.reviews-slider .review');
+const reviewDots  = document.querySelectorAll('.reviews-nav .dot');
 let currentReview = 0;
 
 function showReview(index) {
-    reviews.forEach(r => r.classList.remove('active'));
-    dots.forEach(d => d.classList.remove('active'));
-    reviews[index].classList.add('active');
-    dots[index].classList.add('active');
+    reviewCards.forEach(r => r.classList.remove('active'));
+    reviewDots.forEach(d => d.classList.remove('active'));
+    reviewCards[index].classList.add('active');
+    reviewDots[index].classList.add('active');
+    currentReview = index;
 }
 
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        currentReview = index;
-        showReview(index);
-    });
+reviewDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => showReview(index));
 });
 
 setInterval(() => {
-    currentReview = (currentReview + 1) % reviews.length;
-    showReview(currentReview);
+    showReview((currentReview + 1) % reviewCards.length);
 }, 5000);
+
+showReview(0);
 
 // ── HERO SLIDER ──────────────────────────────
 const heroSlides    = document.querySelectorAll('.hero-slide');
