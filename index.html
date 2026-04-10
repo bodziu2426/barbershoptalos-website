@@ -196,27 +196,32 @@
             <h2>Opinie klientów</h2>
 
             <div class="reviews-slider">
-                <div class="review active">
+                <div class=”review active”>
+                    <div class=”review-stars”>★★★★★</div>
                     <p>„Najlepszy barbershop w Śródmieściu! Polecam.”</p>
                     <h4>Adam</h4>
                 </div>
 
-                <div class="review">
+                <div class=”review”>
+                    <div class=”review-stars”>★★★★★</div>
                     <p>„Profesjonalnie, szybko i w świetnej atmosferze.”</p>
                     <h4>Michał</h4>
                 </div>
 
-                <div class="review">
+                <div class=”review”>
+                    <div class=”review-stars”>★★★★★</div>
                     <p>„Marek zrobił najlepsze fade jakie miałem w życiu.”</p>
                     <h4>Kamil</h4>
                 </div>
 
-                <div class="review">
+                <div class=”review”>
+                    <div class=”review-stars”>★★★★★</div>
                     <p>„Wrócę na pewno. Jakość i styl na najwyższym poziomie.”</p>
                     <h4>Paweł</h4>
                 </div>
 
-                <div class="review">
+                <div class=”review”>
+                    <div class=”review-stars”>★★★★★</div>
                     <p>„Świetny klimat, dobra muzyka i perfekcyjne cięcie.”</p>
                     <h4>Łukasz</h4>
                 </div>
@@ -236,11 +241,31 @@
     <section id="contact" class="reveal">
         <div class="container">
             <h2>Kontakt</h2>
-            <p>Adres: ul. Poniatowskiego 7e, Wrocław, Śródmieście</p>
-            <p>Telefon: +48 663 537 777</p>
-            <p>Email: labbarbershop88@gmail.com</p>
 
-            <h3>Mapa</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">&#9679;</span>
+                    <div>
+                        <span class="contact-label">Adres</span>
+                        <span class="contact-value">ul. Poniatowskiego 7e, Wrocław, Śródmieście</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">&#9679;</span>
+                    <div>
+                        <span class="contact-label">Telefon</span>
+                        <a href="tel:+48663537777" class="contact-value">+48 663 537 777</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">&#9679;</span>
+                    <div>
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:labbarbershop88@gmail.com" class="contact-value">labbarbershop88@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="map-container">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5008.907846222933!2d17.035895680357427!3d51.118534713067966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9b9cd3e5c01%3A0x70ade342b2ea0da2!2sBarbershop%20LAB!5e0!3m2!1spl!2s!4v1775564924347!5m2!1spl!2s"
@@ -258,9 +283,25 @@
 
 <footer>
     <div class="container">
-        <p>© 2026 Barber LAB</p>
+        <div class="footer-links">
+            <a href="https://booksy.com/pl-pl/64196_lab-barber-shop_barber-shop_13750_wroclaw#ba_s=seo" target="_blank" rel="noopener">Umów wizytę</a>
+            <span class="footer-sep">|</span>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <span class="footer-sep">|</span>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <p class="footer-copy">© 2026 Barber LAB Wrocław &mdash; ul. Poniatowskiego 7e</p>
     </div>
 </footer>
+
+<!-- Scroll to top -->
+<button id="scrollTop" aria-label="Scroll to top">&#8679;</button>
+
+<!-- Lightbox -->
+<div id="lightbox">
+    <button id="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+</div>
 
 <script src="js/script.js"></script>
 </body>
