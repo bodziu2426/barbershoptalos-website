@@ -130,7 +130,7 @@ nav ul li a:hover {
 ══════════════════════════════════════════════ */
 #hero {
     position: relative;
-    height: 75vh;
+    height: 90vh;
     min-height: 420px;
     overflow: hidden;
     display: flex;
@@ -592,7 +592,7 @@ footer {
     }
 
     #hero {
-        height: 55svh;
+        height: 75svh;
     }
 
     .hero-content h1 {
