@@ -72,8 +72,10 @@ reveals.forEach(el => observer.observe(el));
         });
     });
 
-    showSlide(0);
-    startTimer();
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+        showSlide(0);
+        startTimer();
+    }));
 })();
 
 
