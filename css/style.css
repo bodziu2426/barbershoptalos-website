@@ -877,7 +877,13 @@ footer {
     .price-category li {
         flex-direction: column;
         text-align: center;
-        gap: 6px;
+        gap: 4px;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .price-category h3 {
+        font-size: 17px;
     }
 
     .barbers-grid {
