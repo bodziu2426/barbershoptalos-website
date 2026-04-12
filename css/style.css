@@ -890,13 +890,27 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
     .gallery-grid img,
     .gallery-grid img.tall,
     .gallery-grid img.wide {
-        height: 220px;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        width: 100%;
         grid-column: span 1;
         grid-row: span 1;
+        object-fit: cover;
     }
+
+    .gallery-grid img:last-child {
+        grid-column: span 3;
+        aspect-ratio: 16 / 9;
+    }
+
 
     nav ul {
         display: flex;
