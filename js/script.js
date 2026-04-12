@@ -85,14 +85,50 @@ reveals.forEach(el => observer.observe(el));
     if (!slides.length || !dots.length) return;
 
     let current = 0;
+    let animating = false;
     let timer = null;
 
-    function showSlide(index) {
-        slides.forEach(s => s.classList.remove('active'));
+    function showSlide(nextIndex) {
+        if (nextIndex === current || animating) return;
+        animating = true;
+
+        const direction = nextIndex > current ? 1 : -1;
+        const outgoing  = slides[current];
+        const incoming  = slides[nextIndex];
+
+        // Snap incoming to its starting off-screen position (no transition)
+        incoming.style.transition = 'none';
+        incoming.style.transform  = `translateX(${direction * 100}%)`;
+        incoming.style.opacity    = '0';
+
+        // Force reflow so browser registers the starting position
+        void incoming.offsetWidth;
+
+        // Slide incoming in from the side
+        incoming.style.transition = 'transform 0.45s ease, opacity 0.45s ease';
+        incoming.style.transform  = 'translateX(0)';
+        incoming.style.opacity    = '1';
+        incoming.classList.add('active');
+
+        // Slide outgoing out to the opposite side
+        outgoing.style.transition = 'transform 0.45s ease, opacity 0.45s ease';
+        outgoing.style.transform  = `translateX(${direction * -100}%)`;
+        outgoing.style.opacity    = '0';
+
+        // Update dots immediately
         dots.forEach(d => d.classList.remove('active'));
-        slides[index].classList.add('active');
-        dots[index].classList.add('active');
-        current = index;
+        dots[nextIndex].classList.add('active');
+        current = nextIndex;
+
+        // Clean up after animation finishes
+        setTimeout(() => {
+            outgoing.classList.remove('active');
+            outgoing.style.transition = '';
+            outgoing.style.transform  = '';
+            outgoing.style.opacity    = '';
+            incoming.style.transition = '';
+            animating = false;
+        }, 450);
     }
 
     function startTimer() {
@@ -109,7 +145,6 @@ reveals.forEach(el => observer.observe(el));
         });
     });
 
-    showSlide(0);
     startTimer();
 })();
 
