@@ -13,6 +13,16 @@ if (hamburger && navMenu) {
             navMenu.classList.remove('open');
         }
     });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+        navMenu.classList.remove('open');
+    }, { passive: true });
 }
 
 // ── SCROLL REVEAL ────────────────────────────
