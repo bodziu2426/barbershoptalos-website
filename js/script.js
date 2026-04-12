@@ -105,13 +105,13 @@ reveals.forEach(el => observer.observe(el));
         void incoming.offsetWidth;
 
         // Slide incoming in from the side
-        incoming.style.transition = 'transform 0.45s ease, opacity 0.45s ease';
+        incoming.style.transition = 'transform 0.52s ease, opacity 0.52s ease';
         incoming.style.transform  = 'translateX(0)';
         incoming.style.opacity    = '1';
         incoming.classList.add('active');
 
         // Slide outgoing out to the opposite side
-        outgoing.style.transition = 'transform 0.45s ease, opacity 0.45s ease';
+        outgoing.style.transition = 'transform 0.52s ease, opacity 0.52s ease';
         outgoing.style.transform  = `translateX(${direction * -100}%)`;
         outgoing.style.opacity    = '0';
 
@@ -128,7 +128,7 @@ reveals.forEach(el => observer.observe(el));
             outgoing.style.opacity    = '';
             incoming.style.transition = '';
             animating = false;
-        }, 450);
+        }, 520);
     }
 
     function startTimer() {
