@@ -550,63 +550,6 @@ nav ul li a:hover {
     grid-column: span 2;
 }
 
-/* ── REVIEWS ───────────────────────────────── */
-#reviews {
-    background: #1a1a1a;
-}
-
-.reviews-slider {
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.review {
-    display: none;
-    background: #1f1f1f;
-    padding: 40px;
-    border-radius: 10px;
-    border: 1px solid #2e2e2e;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
-}
-
-.review.active {
-    display: block;
-}
-
-.review p {
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #bbbbbb;
-}
-
-.review h4 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #c59d5f;
-}
-
-.reviews-nav {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.reviews-nav .dot {
-    width: 12px;
-    height: 12px;
-    background: #333;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.reviews-nav .dot.active {
-    background: #c59d5f;
-    transform: scale(1.2);
-}
 
 /* ── CONTACT ───────────────────────────────── */
 #contact {

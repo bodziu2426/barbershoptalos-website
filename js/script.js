@@ -2,22 +2,21 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('nav ul');
 
-hamburger.addEventListener('click', (event) => {
-    event.stopPropagation();
-    navMenu.classList.toggle('open');
-});
+if (hamburger && navMenu) {
+    hamburger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        navMenu.classList.toggle('open');
+    });
 
-document.addEventListener('click', (event) => {
-    const clickedInsideMenu = navMenu.contains(event.target);
-    const clickedHamburger = hamburger.contains(event.target);
-    if (!clickedInsideMenu && !clickedHamburger) {
-        navMenu.classList.remove('open');
-    }
-});
+    document.addEventListener('click', (event) => {
+        if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+            navMenu.classList.remove('open');
+        }
+    });
+}
 
 // ── SCROLL REVEAL ────────────────────────────
 const reveals = document.querySelectorAll('.reveal');
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -27,117 +26,91 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, { threshold: 0.15 });
-
 reveals.forEach(el => observer.observe(el));
 
-// ── REVIEWS SLIDER ───────────────────────────
-const reviews = document.querySelectorAll('.review');
-const dots = document.querySelectorAll('.dot');
-let currentReview = 0;
-
-function showReview(index) {
-    reviews.forEach(r => {
-        r.style.display = 'none';
-        r.classList.remove('active');
-    });
-    dots.forEach(d => d.classList.remove('active'));
-    reviews[index].style.display = 'block';
-    reviews[index].classList.add('active');
-    dots[index].classList.add('active');
-    currentReview = index;
-}
-
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => showReview(index));
-});
-
-setInterval(() => {
-    showReview((currentReview + 1) % reviews.length);
-}, 5000);
-
-showReview(0);
-
 // ── HERO SLIDER ──────────────────────────────
-const heroSlides  = document.querySelectorAll('.hero-slide');
-const heroTexts   = document.querySelectorAll('.hero-slide-text');
-const heroDots    = document.querySelectorAll('.hero-dot');
-const progressBar = document.querySelector('.hero-progress-bar');
+(function initHeroSlider() {
+    const heroSlides  = document.querySelectorAll('.hero-slide');
+    const heroTexts   = document.querySelectorAll('.hero-slide-text');
+    const heroDots    = document.querySelectorAll('.hero-dot');
+    const progressBar = document.querySelector('.hero-progress-bar');
 
-const SLIDE_DURATION = 5000;
-let currentHeroSlide = 0;
-let heroTimer = null;
+    if (!heroSlides.length || !progressBar) return;
 
-function showHeroSlide(index) {
-    heroSlides.forEach(s => s.classList.remove('active'));
-    heroTexts.forEach(t => t.classList.remove('active'));
-    heroDots.forEach(d => d.classList.remove('active'));
+    const SLIDE_DURATION = 5000;
+    let current = 0;
+    let timer = null;
 
-    heroSlides[index].classList.add('active');
-    heroTexts[index].classList.add('active');
-    heroDots[index].classList.add('active');
-
-    progressBar.style.transition = 'none';
-    progressBar.style.width = '0%';
-
-    requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
+    function showSlide(index) {
+        heroSlides.forEach(s => s.classList.remove('active'));
+        heroTexts.forEach(t => t.classList.remove('active'));
+        heroDots.forEach(d => d.classList.remove('active'));
+        heroSlides[index].classList.add('active');
+        heroTexts[index].classList.add('active');
+        heroDots[index].classList.add('active');
+        progressBar.style.transition = 'none';
+        progressBar.style.width = '0%';
+        requestAnimationFrame(() => requestAnimationFrame(() => {
             progressBar.style.transition = `width ${SLIDE_DURATION}ms linear`;
             progressBar.style.width = '100%';
+        }));
+    }
+
+    function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => {
+            current = (current + 1) % heroSlides.length;
+            showSlide(current);
+        }, SLIDE_DURATION);
+    }
+
+    heroDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            current = index;
+            showSlide(current);
+            startTimer();
         });
     });
-}
 
-function nextHeroSlide() {
-    currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
-    showHeroSlide(currentHeroSlide);
-}
+    showSlide(0);
+    startTimer();
+})();
 
-function startHeroTimer() {
-    clearInterval(heroTimer);
-    heroTimer = setInterval(nextHeroSlide, SLIDE_DURATION);
-}
-
-heroDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        currentHeroSlide = index;
-        showHeroSlide(currentHeroSlide);
-        startHeroTimer();
-    });
-});
-
-showHeroSlide(0);
-startHeroTimer();
 
 // ── SCROLL TO TOP ────────────────────────────
 const scrollTopBtn = document.getElementById('scrollTop');
-
-window.addEventListener('scroll', () => {
-    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-});
-
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-// ── GALLERY LIGHTBOX ─────────────────────────
-const lightbox      = document.getElementById('lightbox');
-const lightboxImg   = document.getElementById('lightbox-img');
-const lightboxClose = document.getElementById('lightbox-close');
-
-document.querySelectorAll('.gallery-grid img').forEach(img => {
-    img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
+if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
     });
-});
-
-function closeLightbox() {
-    lightbox.classList.remove('active');
-    document.body.style.overflow = '';
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 }
 
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+// ── GALLERY LIGHTBOX ─────────────────────────
+(function initLightbox() {
+    const lightbox      = document.getElementById('lightbox');
+    const lightboxImg   = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    if (!lightbox || !lightboxImg || !lightboxClose) return;
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+})();
