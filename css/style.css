@@ -465,6 +465,7 @@ nav ul li a:hover {
 .barber-info {
     padding: 0 24px 28px;
     text-align: center;
+    width: 100%;
 }
 
 .barber-info h3 {
