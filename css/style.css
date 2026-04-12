@@ -169,14 +169,11 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
-    /* Ken Burns zoom effect */
-    transform: scale(1.08);
-    transition: opacity 1.2s ease, transform 6s ease;
+    transition: opacity 1.2s ease;
 }
 
 .hero-slide.active {
     opacity: 1;
-    transform: scale(1);
 }
 
 /* Dark overlay */
@@ -185,9 +182,9 @@ nav ul li a:hover {
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0,0,0,0.3) 0%,
-        rgba(0,0,0,0.55) 50%,
-        rgba(0,0,0,0.75) 100%
+        rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.65) 50%,
+        rgba(0,0,0,0.82) 100%
     );
     z-index: 1;
 }
