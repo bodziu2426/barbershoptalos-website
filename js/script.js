@@ -37,7 +37,7 @@ reveals.forEach(el => observer.observe(el));
 
     if (!heroSlides.length || !progressBar) return;
 
-    const SLIDE_DURATION = 4000;
+    const SLIDE_DURATION = 5000;
     let current = 0;
     let timer = null;
 
