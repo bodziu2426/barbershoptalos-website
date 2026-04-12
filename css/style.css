@@ -370,10 +370,12 @@ nav ul li a:hover {
 
 .price-category h3 {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 26px;
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 20px;
     color: #c59d5f;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 1px;
 }
 
@@ -397,7 +399,7 @@ nav ul li a:hover {
 
 .price-category li strong {
     color: #c59d5f;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .price-category li:last-child {
