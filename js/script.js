@@ -77,6 +77,42 @@ reveals.forEach(el => observer.observe(el));
 })();
 
 
+// ── REVIEWS SLIDER ───────────────────────────
+(function initReviewsSlider() {
+    const slides = document.querySelectorAll('.review-slide');
+    const dots   = document.querySelectorAll('.review-dot');
+
+    if (!slides.length || !dots.length) return;
+
+    let current = 0;
+    let timer = null;
+
+    function showSlide(index) {
+        slides.forEach(s => s.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        current = index;
+    }
+
+    function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => {
+            showSlide((current + 1) % slides.length);
+        }, 5000);
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+            startTimer();
+        });
+    });
+
+    showSlide(0);
+    startTimer();
+})();
+
 // ── SCROLL TO TOP ────────────────────────────
 const scrollTopBtn = document.getElementById('scrollTop');
 if (scrollTopBtn) {
