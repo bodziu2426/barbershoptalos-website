@@ -239,6 +239,23 @@ nav ul li a:hover {
     text-shadow: 0 2px 20px rgba(0,0,0,0.7);
 }
 
+/* Student badge */
+.hero-student {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #c59d5f;
+    border: 1px solid rgba(197,157,95,0.4);
+    padding: 6px 16px;
+    margin-top: -20px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.hero-student strong {
+    color: #e8c97a;
+}
+
 /* Subtitle */
 .hero-sub {
     font-size: clamp(15px, 2vw, 20px);
