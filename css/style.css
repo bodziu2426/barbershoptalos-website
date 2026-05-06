@@ -1045,8 +1045,8 @@ footer {
         display: block;
         text-align: center;
         padding: 14px 20px;
-        border: 1px solid rgba(197, 157, 95, 0.3);
-        background: rgba(197, 157, 95, 0.05);
+        border: 1px solid rgba(197, 157, 95, 0.4);
+        background: rgba(0, 0, 0, 0.65);
         font-size: 14px;
     }
 
