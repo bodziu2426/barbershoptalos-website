@@ -419,6 +419,120 @@ nav ul li a:hover {
     border-bottom: none;
 }
 
+/* ── COWORKING ──────────────────────────────── */
+#coworking {
+    display: flex;
+    padding: 0;
+    background: #0f0f0f;
+    min-height: 620px;
+}
+
+.coworking-image {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.coworking-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        transparent 40%,
+        #0f0f0f 100%
+    );
+    pointer-events: none;
+}
+
+.coworking-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(20%);
+}
+
+.coworking-content {
+    flex: 1;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#coworking h2 {
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+#coworking h2::after {
+    margin: 14px 0 30px;
+}
+
+.coworking-desc {
+    font-size: 17px;
+    color: #bbbbbb;
+    margin-bottom: 36px;
+    line-height: 1.8;
+}
+
+.coworking-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.coworking-features li {
+    font-size: 15px;
+    color: #e8e8e8;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    letter-spacing: 0.3px;
+}
+
+.coworking-features li i {
+    color: #c59d5f;
+    font-size: 11px;
+    flex-shrink: 0;
+    background: rgba(197, 157, 95, 0.12);
+    border: 1px solid rgba(197, 157, 95, 0.3);
+    width: 22px;
+    height: 22px;
+    min-height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.coworking-cta {
+    display: block;
+    width: fit-content;
+    border: 1px solid #c59d5f;
+    color: #c59d5f;
+    padding: 15px 42px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.coworking-cta:hover {
+    background: #c59d5f;
+    color: #0a0a0a;
+    box-shadow: 0 0 30px rgba(197, 157, 95, 0.3);
+    transform: translateY(-2px);
+}
+
 /* ── BARBERS ───────────────────────────────── */
 #barbers {
     background: #1a1a1a;
@@ -884,6 +998,63 @@ footer {
 
     .about-photo img {
         max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #coworking {
+        position: relative;
+        min-height: unset;
+    }
+
+    .coworking-image {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        flex: none;
+    }
+
+    .coworking-image::after {
+        background: rgba(0, 0, 0, 0.82);
+    }
+
+    .coworking-content {
+        position: relative;
+        z-index: 1;
+        padding: 60px 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #coworking h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #coworking h2::after {
+        margin: 14px auto 30px;
+    }
+
+    .coworking-features {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .coworking-features li {
+        display: block;
+        text-align: center;
+        padding: 14px 20px;
+        border: 1px solid rgba(197, 157, 95, 0.3);
+        background: rgba(197, 157, 95, 0.05);
+        font-size: 14px;
+    }
+
+    .coworking-features li i {
+        display: none;
+    }
+
+    .coworking-cta {
         margin: 0 auto;
     }
 
