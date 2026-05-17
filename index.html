@@ -114,15 +114,14 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) — GA4 + Google Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18153818295"></script>
+    <!-- Google tag (gtag.js) — GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K08FGF88Q9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-K08FGF88Q9');
-      gtag('config', 'AW-18153818295');
     </script>
 
     <link rel="stylesheet" href="css/style.css">
@@ -521,20 +520,16 @@
 <script src="js/script.js"></script>
 
 <script>
-  // Google Ads — śledzenie konwersji
+  // GA4 — śledzenie konwersji
   document.querySelectorAll('a[href*="booksy.com"]').forEach(function(el) {
     el.addEventListener('click', function() {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18153818295/wQH-CPL2yK4cELeRtdBD'
-      });
+      gtag('event', 'booksy_click');
     });
   });
 
   document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
     el.addEventListener('click', function() {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18153818295/4u0nCKrO4a4cELeRtdBD'
-      });
+      gtag('event', 'phone_click');
     });
   });
 </script>
