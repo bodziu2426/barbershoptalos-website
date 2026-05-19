@@ -525,22 +525,12 @@
   document.querySelectorAll('a[href*="booksy.com"]').forEach(function(el) {
     el.addEventListener('click', function() {
       gtag('event', 'booksy_click');
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18153696875/booksy_click',
-        'value': 50.0,
-        'currency': 'PLN'
-      });
     });
   });
 
   document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
     el.addEventListener('click', function() {
       gtag('event', 'phone_click');
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18153696875/phone_click',
-        'value': 50.0,
-        'currency': 'PLN'
-      });
     });
   });
 </script>
