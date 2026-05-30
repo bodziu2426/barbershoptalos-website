@@ -33,84 +33,106 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "HairSalon",
-        "name": "Barber LAB Wrocław",
-        "description": "Profesjonalny barbershop w centrum Wrocławia. Strzyżenie męskie, modelowanie brody, golenie brzytwą, hot shave, szkolenia barberskie.",
-        "url": "https://barbershoplab.pl/",
-        "telephone": "+48663537777",
-        "email": "labbarbershop88@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "ul. Poniatowskiego 7e",
-            "addressLocality": "Wrocław",
-            "addressRegion": "Śródmieście",
-            "postalCode": "50-326",
-            "addressCountry": "PL"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 51.1185,
-            "longitude": 17.0359
-        },
-        "openingHoursSpecification": [
+        "@graph": [
             {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-                "opens": "10:00",
-                "closes": "20:00"
+                "@type": "HairSalon",
+                "name": "Barber LAB Wrocław — Poniatowskiego",
+                "description": "Profesjonalny barbershop w centrum Wrocławia. Strzyżenie męskie, modelowanie brody, golenie brzytwą, hot shave, szkolenia barberskie.",
+                "url": "https://barbershoplab.pl/",
+                "telephone": "+48663537777",
+                "email": "labbarbershop88@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "ul. Poniatowskiego 7e",
+                    "addressLocality": "Wrocław",
+                    "addressRegion": "Śródmieście",
+                    "postalCode": "50-326",
+                    "addressCountry": "PL"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 51.1185,
+                    "longitude": 17.0359
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                        "opens": "10:00",
+                        "closes": "20:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Sunday",
+                        "opens": "10:00",
+                        "closes": "19:00"
+                    }
+                ],
+                "sameAs": [
+                    "https://www.instagram.com/lab_barber_shop/",
+                    "https://www.facebook.com/share/171YR62eWr/?mibextid=wwXIfr",
+                    "https://booksy.com/pl-pl/64196_lab-barber-shop_barber-shop_13750_wroclaw"
+                ],
+                "priceRange": "$$",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Usługi Barber LAB Wrocław",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Strzyżenie męskie",
+                                "description": "Profesjonalne strzyżenie męskie w barbershopie w centrum Wrocławia"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Modelowanie brody",
+                                "description": "Modelowanie i pielęgnacja brody, hot shave, golenie brzytwą"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Szkolenia barberskie Wrocław",
+                                "description": "Kursy i szkolenia barberskie we Wrocławiu – dla początkujących i zaawansowanych barberów"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Coworking barberski Wrocław – wynajem fotela",
+                                "description": "Jedyny coworking barberski w centrum Wrocławia. Wynajem fotela barberskiego na własną działalność (B2B) – stała stawka miesięczna, bez prowizji, dostęp 24/7. Śródmieście, ul. Poniatowskiego 7e."
+                            }
+                        }
+                    ]
+                }
             },
             {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Sunday",
-                "opens": "10:00",
-                "closes": "19:00"
+                "@type": "HairSalon",
+                "name": "Barber LAB Wrocław — Cybulskiego",
+                "description": "Profesjonalny barbershop we Wrocławiu. Strzyżenie męskie, modelowanie brody, golenie brzytwą, hot shave.",
+                "url": "https://barbershoplab.pl/",
+                "telephone": "+48548470249",
+                "email": "labbarbershop88@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "ul. Wojciecha Cybulskiego 3",
+                    "addressLocality": "Wrocław",
+                    "postalCode": "52-007",
+                    "addressCountry": "PL"
+                },
+                "sameAs": [
+                    "https://booksy.com/pl-pl/348343_lab-barber-shop-2_barber-shop_13750_wroclaw"
+                ],
+                "priceRange": "$$"
             }
-        ],
-        "sameAs": [
-            "https://www.instagram.com/lab_barber_shop/",
-            "https://www.facebook.com/share/171YR62eWr/?mibextid=wwXIfr",
-            "https://booksy.com/pl-pl/64196_lab-barber-shop_barber-shop_13750_wroclaw"
-        ],
-        "priceRange": "$$",
-        "hasMap": "https://maps.google.com/?q=Barbershop+LAB+Wrocław",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Usługi Barber LAB Wrocław",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Strzyżenie męskie",
-                        "description": "Profesjonalne strzyżenie męskie w barbershopie w centrum Wrocławia"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Modelowanie brody",
-                        "description": "Modelowanie i pielęgnacja brody, hot shave, golenie brzytwą"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Szkolenia barberskie Wrocław",
-                        "description": "Kursy i szkolenia barberskie we Wrocławiu – dla początkujących i zaawansowanych barberów"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Coworking barberski Wrocław – wynajem fotela",
-                        "description": "Jedyny coworking barberski w centrum Wrocławia. Wynajem fotela barberskiego na własną działalność (B2B) – stała stawka miesięczna, bez prowizji, dostęp 24/7. Śródmieście, ul. Poniatowskiego 7e."
-                    }
-                }
-            ]
-        }
+        ]
     }
     </script>
 
@@ -148,7 +170,7 @@
                 <li><a href="#coworking">Coworking</a></li>
                 <li><a href="#services">Usługi</a></li>
                 <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#locations">Lokalizacje</a></li>
             </ul>
         </nav>
     </div>    
@@ -194,7 +216,7 @@
                 <p class="hero-sub">Jedyny taki fryzjer męski - swobodny klimat, dobra energia i ludzie, którzy tworzą coś więcej niż tylko barber shop</p>
             </div>
 
-            <a class="hero-cta" href="https://booksy.com/pl-pl/64196_lab-barber-shop_barber-shop_13750_wroclaw#ba_s=seo">Umów wizytę</a>
+            <a class="hero-cta" href="#locations">Umów wizytę</a>
         </div>
 
         <!-- Slide indicators -->
@@ -447,56 +469,71 @@
         </div>
     </section>
 
-    <section id="contact" class="reveal">
+    <section id="locations" class="reveal">
         <div class="container">
-            <h2>Kontakt</h2>
+            <h2>Nasze lokalizacje</h2>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-icon">&#9679;</span>
-                    <div>
-                        <span class="contact-label">Adres</span>
-                        <span class="contact-value">ul. Poniatowskiego 7e, Wrocław, Śródmieście</span>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">&#9679;</span>
-                    <div>
-                        <span class="contact-label">Telefon</span>
-                        <a href="tel:+48663537777" class="contact-value">+48 663 537 777</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">&#9679;</span>
-                    <div>
-                        <span class="contact-label">Email</span>
-                        <a href="mailto:labbarbershop88@gmail.com" class="contact-value">labbarbershop88@gmail.com</a>
-                    </div>
-                </div>
-            </div>
+            <div class="locations-grid">
 
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5008.907846222933!2d17.035895680357427!3d51.118534713067966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9b9cd3e5c01%3A0x70ade342b2ea0da2!2sBarbershop%20LAB!5e0!3m2!1spl!2s!4v1775564924347!5m2!1spl!2s"
-                    width="100%" 
-                    height="350" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div class="location-card">
+                    <h3>Poniatowskiego</h3>
+                    <div class="location-details">
+                        <div class="location-detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>ul. Poniatowskiego 7e, Wrocław Śródmieście</span>
+                        </div>
+                        <div class="location-detail-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+48663537777">+48 663 537 777</a>
+                        </div>
+                        <div class="location-detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:labbarbershop88@gmail.com">labbarbershop88@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5008.907846222933!2d17.035895680357427!3d51.118534713067966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9b9cd3e5c01%3A0x70ade342b2ea0da2!2sBarbershop%20LAB!5e0!3m2!1spl!2s!4v1775564924347!5m2!1spl!2s"
+                            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <a class="location-cta" href="https://booksy.com/pl-pl/64196_lab-barber-shop_barber-shop_13750_wroclaw#ba_s=seo" target="_blank" rel="noopener">Umów wizytę</a>
+                </div>
+
+                <div class="location-card">
+                    <h3>Cybulskiego</h3>
+                    <div class="location-details">
+                        <div class="location-detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>ul. Wojciecha Cybulskiego 3, Wrocław</span>
+                        </div>
+                        <div class="location-detail-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+48548470249">+48 548 470 249</a>
+                        </div>
+                        <div class="location-detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:labbarbershop88@gmail.com">labbarbershop88@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=ul.+Wojciecha+Cybulskiego+3,+52-007+Wrocław&hl=pl&output=embed"
+                            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <a class="location-cta location-cta--loc2" href="https://booksy.com/pl-pl/348343_lab-barber-shop-2_barber-shop_13750_wroclaw#ba_s=sh_1" target="_blank" rel="noopener">Umów wizytę</a>
+                </div>
+
             </div>
         </div>
     </section>
+
 </main>
 
 <footer>
     <div class="container">
         <div class="footer-links">
-            <a href="https://booksy.com/pl-pl/64196_lab-barber-shop_barber-shop_13750_wroclaw#ba_s=seo" target="_blank" rel="noopener" class="footer-link">
-                <span class="footer-link-icon"><i class="fa-solid fa-calendar-check"></i></span>
-                <span>Booksy</span>
-            </a>
             <a href="https://www.instagram.com/lab_barber_shop/" target="_blank" rel="noopener" class="footer-link">
                 <span class="footer-link-icon"><i class="fa-brands fa-instagram"></i></span>
                 <span>Instagram</span>
@@ -506,7 +543,7 @@
                 <span>Facebook</span>
             </a>
         </div>
-        <p class="footer-copy">© 2026 Barber LAB Wrocław &mdash; ul. Poniatowskiego 7e</p>
+        <p class="footer-copy">© 2026 Barber LAB Wrocław</p>
     </div>
 </footer>
 
@@ -524,13 +561,21 @@
 <script>
   document.querySelectorAll('a[href*="booksy.com"]').forEach(function(el) {
     el.addEventListener('click', function() {
-      gtag('event', 'booksy_click');
+      if (this.href.indexOf('348343') !== -1) {
+        gtag('event', 'booksy_click_2');
+      } else {
+        gtag('event', 'booksy_click');
+      }
     });
   });
 
   document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
     el.addEventListener('click', function() {
-      gtag('event', 'phone_click');
+      if (this.href.indexOf('548470249') !== -1) {
+        gtag('event', 'phone_click_2');
+      } else {
+        gtag('event', 'phone_click');
+      }
     });
   });
 </script>
