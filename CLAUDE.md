@@ -184,3 +184,142 @@ Inne: booksy (wyszukiwanie samej platformy), z dojazdem do domu, arkadiusz panek
 | 2026-06-01 | Budżet podniesiony do 33,33 zł/dzień |
 | 2026-06-02 | Zero wydatków — przyczyna nieznana (do zbadania) |
 | 2026-06-16 | **Duża naprawa:** usunięto Local Actions z celów konwersji, dodano języki UA+RU, usunięto 2 słowa kluczowe niskiej jakości, dodano Reklamę 2 |
+| 2026-06-16 | Zaimportowano booksy_click_2 z GA4 do Google Ads |
+| 2026-06-16 | Kampania 2 (Cybulskiego) utworzona i skonfigurowana — wstrzymana, czeka na budżet od Dawida |
+
+---
+
+## Lokal 2 — Cybulskiego 3
+
+- **Adres:** ul. Wojciecha Cybulskiego 3, 52-007 Wrocław
+- **Telefon:** +48 548 470 249
+- **Booksy:** https://booksy.com/pl-pl/348343_lab-barber-shop-2_barber-shop_13750_wroclaw
+- **Team:** MAKS, DIMA (junior barber), SVETLANA
+- **Godziny:** 10:00–20:00, 7 dni w tygodniu
+- **Opinie:** 5,0 (5 recenzji — nowy lokal)
+
+### Cennik Lokal 2 vs Lokal 1
+
+| Usługa | Lok. 1 (Poniatowskiego) | Lok. 2 (Cybulskiego) |
+|---|---|---|
+| Strzyżenie | 90-100 zł | **70 zł** |
+| Studenci | 80-90 zł | **60 zł** |
+| Buzz cut | 80-90 zł | **60 zł** |
+| Broda | 70-80 zł | **40 zł** |
+| Combo włosy+broda | 140-150 zł | **90 zł** |
+| Hot Shave | 130 zł | ❌ brak |
+
+### Tracking Lokal 2
+- Zdarzenie: `booksy_click_2` (w index.html — rozróżnia po numerze Booksy 348343)
+- Zaimportowane do Google Ads: ✅ (2026-06-16)
+- Status: Brak konwersji w ostatnim czasie (nowy lokal)
+
+---
+
+## Kampania 2 — Pełna konfiguracja
+
+- **Nazwa:** Barbershop LAB - Wrocław 2 - Search
+- **Status:** Utworzona 2026-06-16, wstrzymana (budżet do ustalenia z Dawidem)
+- **Typ:** Sieć wyszukiwania
+- **Strategia:** Maksymalizacja konwersji (bez docelowego CPA na start)
+- **Budżet:** 25 zł/dzień (tymczasowy — do zmiany przed uruchomieniem)
+- **Cel konwersji:** booksy_click_2
+- **Lokalizacja:** Wrocław + 10 km
+- **Języki:** polski, ukraiński, rosyjski
+- **Sieci:** tylko wyszukiwarka (Display i partnerzy wyłączone)
+- **AI Max:** wyłączone
+- **URL końcowy:** https://barbershoplab.pl/
+- **Ścieżka URL:** wroclaw / barbershop
+- **Nazwa firmy:** Barbershop LAB
+- **Telefon:** +48 548 470 249
+- **Główny wyróżnik:** Niższe ceny (strzyżenie od 70 zł, broda od 40 zł)
+
+### Słowa kluczowe (17)
+```
+barbershop wrocław
+barber wrocław
+fryzjer męski wrocław
+barber cennik wrocław
+barber blisko mnie
+fryzjer blisko
+tani barber wrocław
+niedrogi barber wrocław
+barber śródmieście wrocław
+barber student wrocław
+barber cybulskiego wrocław
+lab barber wrocław
+golenie brody wrocław
+барбер Вроцлав
+барбершоп Вроцлав
+перукарня Вроцлав
+strzyżenie męskie wrocław
+```
+
+### Reklama 1 — Oferta cenowa
+
+**Nagłówki (Nagłówek 1 przypięty do pozycji 1):**
+1. Barbershop Lab Wrocław *(przypięty poz. 1)*
+2. Strzyżenie od 70 zł
+3. Broda już od 40 zł
+4. Combo włosy+broda 90 zł
+5. Studenci: 60 zł
+6. Tańszy barber w centrum
+7. ul. Cybulskiego 3
+8. Otwarte 7 dni do 20:00
+9. Umów się na Booksy
+10. Junior barber dostępny
+11. Barber blisko centrum
+12. Najlepsza cena w centrum
+13. Buzz cut od 60 zł
+14. Rezerwacja online
+15. Barbershop LAB Lok. 2
+
+**Opisy:**
+1. Strzyżenie od 70 zł, broda od 40 zł. Tańszy barber w centrum Wrocławia – zarezerwuj!
+2. Combo włosy + broda tylko 90 zł. Otwarte 7 dni w tygodniu do 20:00. Ul. Cybulskiego 3.
+3. Studenci płacą 60 zł za strzyżenie. Junior barber w zespole. Umów się dziś na Booksy!
+4. Barbershop LAB – ta sama jakość, niższa cena. Druga lokalizacja w centrum Wrocławia.
+
+### Sitelinki (4)
+
+| Tekst | URL | Linia 1 | Linia 2 |
+|---|---|---|---|
+| Zarezerwuj online | booksy.com/../348343 | Szybka rezerwacja przez Booksy | Wybierz termin 24/7 bez czekania |
+| Sprawdź ceny | booksy.com/../348343 | Strzyżenie od 70 zł, broda od 40 zł | Studenci i uczniowie 60 zł |
+| Dojazd – Cybulskiego 3 | barbershoplab.pl/#locations | Śródmieście Wrocławia | Łatwy dojazd i parking |
+| Galeria realizacji | barbershoplab.pl/#gallery | Zobacz prace naszych barberów | Fade, strzyżenie i pielęgnacja |
+| Nasze usługi | barbershoplab.pl/#services | Strzyżenie, broda, hot shave | Junior barber w zespole |
+
+*Uwaga: Google nie pozwolił na duplikat URL — Sprawdź ceny i Zarezerwuj online mają ten sam URL Booksy. Może wymagać korekty.*
+
+### Objaśnienia (callouts)
+
+Z kampanii 1 (zachowane): Rezerwacja online 24/7, 5,0 z 1232 opinii
+
+Nowe dla kampanii 2:
+- Strzyżenie od 70 zł
+- Broda od 40 zł
+- Studenci 60 zł
+- Combo od 90 zł
+- Otwarte 7 dni
+- Czynne do 20:00
+- Junior barber
+
+### Wykluczające słowa kluczowe
+
+Pełna lista z kampanii 1 (75 fraz) **plus dodatkowe:**
+- poniatowskiego
+- barber lab poniatowskiego
+- barber kobiet
+- fryzjer damski
+- fryzjer dla kobiet
+- fryzjer dziecięcy
+- fryzjer dla dzieci
+- salon fryzjerski
+
+### Do zrobienia przed uruchomieniem
+- [ ] Ustalić budżet dzienny z Dawidem i zmienić z 25 zł na właściwy
+- [x] Dodać wykluczające słowa kluczowe (lista powyżej) — dodane 2026-06-16
+- [ ] Dodać drugą reklamę RSA (lokalizacja + jakość) — nagłówki w planie kampanii 2
+- [ ] Sprawdzić czy sitelink "Sprawdź ceny" z duplikatem URL został zaakceptowany przez Google
+- [ ] Aktywować kampanię
