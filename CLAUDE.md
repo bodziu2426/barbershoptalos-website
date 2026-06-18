@@ -156,21 +156,51 @@ Inne: booksy (wyszukiwanie samej platformy), z dojazdem do domu, arkadiusz panek
 
 ---
 
+## Stan po naprawie celów — faza uczenia (od 2026-06-16)
+
+### Dlaczego 16.06 = 0 zł wydanych?
+Tego dnia wprowadzano duże zmiany (usunięcie Local Actions, zmiana celów konwersji, usunięcie słów kluczowych, dodanie reklamy). Przy każdej większej edycji:
+- Zmienione elementy trafiają do krótkiej weryfikacji przez Google — reklamy mogą nie wyświetlać się w ogóle
+- Zmiana głównego celu konwersji powoduje natychmiastowy reset Smart Biddingu
+
+Uwaga: 2.06 również miał 0 zł (nieznana przyczyna) — obydwa dni to wtorki.
+
+### Dlaczego 17.06 tylko 12 zł z 33 zł?
+Po resecie Smart Biddingu algorytm **celowo licytuje ostrożniej** — nie zna jeszcze wartości konwersji w nowym modelu (booksy_click), więc woli wygrywać mniej aukcji, ale taniej. To całkowicie normalne zachowanie.
+
+| Data | Kliknięcia | CPC | Koszt | Uwagi |
+|---|---|---|---|---|
+| 15.06 (pon) | 23 | 1,47 zł | 33,82 zł | ostatni dzień przed zmianami |
+| 16.06 (wt) | 0 | — | 0,00 zł | dzień zmian — reset algorytmu |
+| 17.06 (śr) | 9 | 1,34 zł | 12,07 zł | faza uczenia — 36% budżetu |
+
+Szacowany powrót do normalnego wydawania budżetu: **ok. 23–30 czerwca 2026** (7–14 dni od resetu).
+
+### Co obserwować w fazie uczenia
+- Czy koszt/dzień stopniowo rośnie w kierunku 33 zł
+- Czy pojawiają się realne konwersje booksy_click
+- Jeśli po 30.06 algorytm nadal nie wydaje pełnego budżetu — rozważyć tymczasowe obniżenie budżetu lub ręczną zmianę strategii
+
+---
+
 ## Zadania do wykonania
 
 ### Pilne (najbliższe 2 tygodnie — poczekaj na stabilizację algorytmu po zmianie konwersji)
 - [ ] Sprawdzić czy conversion action IDs w index.html są prawdziwe czy nadal placeholder
-- [ ] Monitorować koszt/konwersję po naprawie celów
+- [ ] Monitorować koszt/dzień — powinien rosnąć stopniowo do 33 zł przez tydzień
+- [ ] Sprawdzić czy pojawiają się konwersje booksy_click
 
 ### Po 2 tygodniach (ok. 2026-06-30)
 - [ ] Ocenić koszt realnej konwersji (booksy_click)
 - [ ] Podjąć decyzję o podniesieniu budżetu (propozycja: 50 zł/dzień)
 - [ ] Ocenić która reklama (1 vs 2) ma lepszy CTR
 - [ ] Sprawdzić rekomendacje Google (wynik optymalizacji 65%)
+- [ ] Jeśli algorytm nadal nie wydaje pełnego budżetu — rozważyć zmianę strategii
 
 ### Do omówienia z Dawidem
 - [ ] Ile zł jest gotowy płacić za jednego nowego klienta z reklamy?
 - [ ] Czy chce skalować kampanię agresywniej?
+- [ ] Decyzja o budżecie i uruchomieniu Kampanii 2 (Cybulskiego)
 
 ---
 
