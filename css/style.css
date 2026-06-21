@@ -27,6 +27,7 @@ section {
     scroll-margin-top: 100px;
 }
 
+
 section .container {
     text-align: center;
 }
@@ -133,8 +134,8 @@ nav ul li a:hover {
 /* ── REVEAL ANIMATION ──────────────────────── */
 .reveal {
     opacity: 0;
-    transform: translateY(60px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
 .reveal.active {
@@ -337,6 +338,7 @@ nav ul li a:hover {
 /* ── ABOUT ─────────────────────────────────── */
 #about {
     background: #1a1a1a;
+    padding: 120px 0;
 }
 
 .about-wrapper {
@@ -370,7 +372,7 @@ nav ul li a:hover {
 
 /* ── SERVICES ──────────────────────────────── */
 #services {
-    background: #1a1a1a;
+    background: #111111;
 }
 
 .price-category {
@@ -419,11 +421,149 @@ nav ul li a:hover {
     border-bottom: none;
 }
 
+/* ── SZKOLENIA ──────────────────────────────── */
+#szkolenia {
+    background: #111111;
+    padding: 120px 0;
+}
+
+.szkolenia-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 80px;
+    align-items: start;
+}
+
+.szkolenia-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.szkolenia-card {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.szkolenia-cta {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 44px;
+    align-self: start;
+    justify-self: center;
+}
+
+#szkolenia h2 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#szkolenia h2::after {
+    margin: 18px auto 32px;
+}
+
+.szkolenia-left p {
+    font-size: 16px;
+    color: #999;
+    line-height: 1.8;
+    margin-bottom: 44px;
+}
+
+.szkolenia-cta {
+    display: inline-block;
+    border: 1px solid #c59d5f;
+    color: #c59d5f;
+    padding: 15px 42px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.szkolenia-cta:hover {
+    background: #c59d5f;
+    color: #0a0a0a;
+    box-shadow: 0 0 30px rgba(197, 157, 95, 0.3);
+    transform: translateY(-2px);
+}
+
+.szkolenia-card {
+    border: 1px solid rgba(197, 157, 95, 0.35);
+    background: #0f0f0f;
+    padding: 48px 44px;
+    position: relative;
+}
+
+.szkolenia-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #c59d5f, transparent);
+}
+
+.szkolenia-card-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c59d5f;
+    margin-bottom: 20px;
+}
+
+.szkolenia-card h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e8e8e8;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+}
+
+.szkolenia-card-details {
+    list-style: none;
+}
+
+.szkolenia-card-details li {
+    position: relative;
+    padding: 14px 0 14px 32px;
+    border-bottom: 1px solid #1e1e1e;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.szkolenia-card-details li::before {
+    content: '—';
+    color: #c59d5f;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+.szkolenia-card-details li:last-child {
+    border-bottom: none;
+}
+
+.szkolenia-card-details li strong {
+    display: block;
+    color: #e8e8e8;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
 /* ── COWORKING ──────────────────────────────── */
 #coworking {
     display: flex;
     padding: 0;
-    background: #0f0f0f;
+    background: #1a1a1a;
     min-height: 620px;
 }
 
@@ -440,7 +580,7 @@ nav ul li a:hover {
     background: linear-gradient(
         to right,
         transparent 40%,
-        #0f0f0f 100%
+        #1a1a1a 100%
     );
     pointer-events: none;
 }
@@ -634,7 +774,7 @@ nav ul li a:hover {
 
 /* ── GALLERY ───────────────────────────────── */
 #gallery {
-    background: #111111;
+    background: #1a1a1a;
 }
 
 #gallery .container {
@@ -1091,6 +1231,49 @@ footer {
     .about-photo img {
         max-width: 90%;
         margin: 0 auto;
+    }
+
+    .szkolenia-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .szkolenia-left {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .szkolenia-card {
+        grid-column: unset;
+        grid-row: unset;
+        padding: 36px 28px;
+        width: 100%;
+    }
+
+    .szkolenia-cta {
+        grid-column: unset;
+        grid-row: unset;
+        margin-top: 0;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+    #szkolenia h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #szkolenia h2::after {
+        margin: 18px auto 32px;
+    }
+
+    .szkolenia-left p {
+        text-align: center;
+        margin-bottom: 0;
     }
 
     #coworking {

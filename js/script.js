@@ -38,6 +38,16 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 reveals.forEach(el => observer.observe(el));
 
+// ── NAV ANCHOR SCROLL FIX ────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target && target.classList.contains('reveal')) {
+            target.classList.add('active');
+        }
+    });
+});
+
 // ── HERO SLIDER ──────────────────────────────
 (function initHeroSlider() {
     const heroSlides  = document.querySelectorAll('.hero-slide');

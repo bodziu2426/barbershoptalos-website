@@ -17,6 +17,40 @@
 - Struktura: index.html, css/, js/, img/
 - Ścieżki sitelinków w reklamach: /#services, /#gallery, /#locations
 
+### Sekcje strony (kolejność)
+1. `#hero` — slider 4 slajdów: Barbershop → Szkolenia → Coworking → Atmosfera
+2. `#about` — O nas
+3. `#szkolenia` — Szkolenie Barberskie *(dodana 2026-06-21)*
+4. `#coworking` — Coworking
+5. `#services` — Usługi i Cennik
+6. `#gallery` — Galeria
+7. `#reviews` — Opinie klientów
+8. `#locations` — Lokalizacje
+
+### Tła sekcji (naprzemienne — tylko 2 kolory)
+| Sekcja | Tło |
+|---|---|
+| #about | `#1a1a1a` |
+| #szkolenia | `#111111` |
+| #coworking | `#1a1a1a` |
+| #services | `#111111` |
+| #gallery | `#1a1a1a` |
+| #reviews | `#111111` |
+| #locations | `#1a1a1a` |
+
+### Animacja reveal
+- Klasa `.reveal` na każdej sekcji (poza hero)
+- CSS: `opacity: 0; transform: translateY(50px)` → `opacity: 1; transform: translateY(0)` (0.7s ease-out)
+- JS fix w `script.js`: kliknięcie linka nawigacyjnego natychmiast dodaje `.active` do docelowej sekcji zanim scroll nastąpi (zapobiega błędnej pozycji scrolla)
+
+### Sekcja #szkolenia — szczegóły (stan 2026-06-21)
+- **Layout desktop:** CSS Grid 2 kolumny — lewa (h2 + opis + CTA pod spodem), prawa (karta kursu rozciągnięta na obie wiersze)
+- **Layout mobile:** flex column — tekst → karta → guzik
+- **CTA:** mailto do labbarbershop88@gmail.com z tematem "Zapytanie o szkolenie barberskie"
+- **Karta kursu:** `border: 1px solid rgba(197,157,95,0.35)`, `background: #0f0f0f`, złoty pionowy akcent `::before`
+- **Bullet pointy w karcie:** CSS `::before` z `'—'` w kolorze `#c59d5f`, `position: absolute`, tekst z `padding-left: 32px`
+- **Pliki podglądowe:** `szkolenia-preview2.html`, `szkolenia-preview3.html` — można usunąć (już niepotrzebne)
+
 ### Tracking (stan na 2026-05-19)
 - **GA4:** G-K08FGF88Q9 (w `<head>`)
 - **Google Ads tag:** AW-18153696875 (w `<head>`, scalony z GA4 w jeden gtag block)
