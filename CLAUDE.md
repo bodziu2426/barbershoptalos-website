@@ -190,8 +190,8 @@ URL końcowy: https://barbershoplab.pl/
 - Objaśnienia: Hot shave we Wrocławiu, Strzyżenie i broda, Doświadczeni barberzy, Studenci -10 zł
 
 ### Konwersje
-- phone_click_2: ✅ skonfigurowane (kategoria: Połączenie telefoniczne, źródło GA4)
-- booksy_click_2: ⏳ do dodania — czekać aż pojawi się w panelu importu GA4 (zdarzenie wywołane 02.07)
+- phone_click_2: ✅ aktywne (kategoria: Połączenie telefoniczne, źródło GA4)
+- booksy_click_2: ✅ aktywne (kategoria: Zakupy, źródło GA4, utworzone 30.06.2026, pierwsza konwersja 03.07.2026)
 
 ### Wykluczające słowa kluczowe
 Pełna lista z Poniatowskiego (75 fraz) + dodatkowo:
@@ -200,7 +200,7 @@ Pełna lista z Poniatowskiego (75 fraz) + dodatkowo:
 - gentleman, gentlemen barber, rudy was, barber bus
 
 ### Do zrobienia dla Cybulskiego
-- [ ] Dodać booksy_click_2 jako konwersję (sprawdzić 03–04.07)
+- [x] Dodać booksy_click_2 jako konwersję — ✅ aktywne od 30.06.2026
 - [ ] Zmienić strategię na Maks. konwersje ok. 16.07 (po ~2 tygodniach zbierania danych)
 - [ ] Zmiana nazwy płatnika na E.B. Barber Edik Babayan — czekamy na weryfikację CEIDG
 - [ ] Nie dodawać drugiej reklamy RSA dopóki Cybulskiego nie zbierze własnych opinii Google
