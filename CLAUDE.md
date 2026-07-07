@@ -216,8 +216,8 @@ Pełna lista z Poniatowskiego (75 fraz) + dodatkowo:
 - **Opinie:** 5,0 (nowy lokal, mała liczba opinii)
 - **Promocja:** -50% na pierwsze strzyżenie — tylko rejestracja telefoniczna lub osobista (NIE przez Booksy)
 
-### Cennik Lokal 2 — NIEZWERYFIKOWANY
-Cennik na stronie (/#services) może różnić się od rzeczywistego cennika Cybulskiego i Booksy. Nie używać sitelinku do cennika w kampanii Cybulskiego dopóki nie potwierdzone.
+### Cennik Lokal 2 — ZWERYFIKOWANY (03.07.2026)
+Cennik na stronie (/#services) jest aktualny i poprawny dla lokalu Cybulskiego. Sitelink do cennika można używać w kampanii.
 
 ---
 
