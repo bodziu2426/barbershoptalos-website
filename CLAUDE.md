@@ -50,6 +50,36 @@
 - **Karta kursu:** `border: 1px solid rgba(197,157,95,0.35)`, `background: #0f0f0f`, złoty pionowy akcent `::before`
 - **Bullet pointy w karcie:** CSS `::before` z `'—'` w kolorze `#c59d5f`, `position: absolute`, tekst z `padding-left: 32px`
 
+### Cennik na stronie — Poniatowskiego (stan 2026-07-17)
+| Usługa | Cena |
+|---|---|
+| Strzyżenie męskie / Men's haircut | 100 zł |
+| Strzyżenie męskie ze zniżką STUDENT/UCZEŃ | 90 zł |
+| Buzz Cut | 90 zł |
+| Strzyżenie maszynką na jedną długość | 70 zł |
+| Strzyżenie długich włosów | 120 zł |
+| Strzyżenie męskie z tonowaniem siwizny | 160 zł |
+| Strzyżenie brody | 70 zł |
+| Broda HOT SHAVE | 130 zł |
+| Broda + tonowanie | 130 zł |
+| Golenie HOT SHAVE (głowa lub twarz) | 130 zł |
+| Tonowanie siwizny (włosy lub broda) | 60 zł |
+| Tonowanie siwizny COMBO (włosy i broda) | 130 zł |
+| COMBO 1 (strzyżenie męskie + broda) | 150 zł |
+| COMBO 1 + tonowanie siwizny | 210 zł |
+| COMBO 2 (strzyżenie + Broda HOT SHAVE) | 210 zł |
+| COMBO 3 (strzyżenie + Broda HOT SHAVE + tonowanie) | 260 zł |
+| Modelowanie włosów | 30 zł |
+
+**UWAGA:** Cennik Cybulskiego jest inny — strona www ma jeden wspólny cennik (Poniatowskiego). Nie aktualizować bez osobnego cennika Cybulskiego.
+
+### Promocja -50% (stan 2026-07-17)
+- Pierwsze strzyżenie -50% — obowiązuje w **obu lokalach**
+- Warunek: tylko rezerwacja **telefoniczna lub osobista** w salonie
+- NIE dotyczy rezerwacji przez Booksy
+- Na stronie: baner w `#services` + pasek w `#locations` pod danymi kontaktowymi każdego lokalu
+- W Google Ads: nagłówek dodany do obu kampanii (zastąpił "Strzyżenie od 60 zł")
+
 ### Tracking (stan na 2026-07-02)
 - **GA4:** G-K08FGF88Q9 (w `<head>`)
 - **Google Ads tag:** AW-18153696875 (w `<head>`, scalony z GA4 w jeden gtag block)
@@ -58,7 +88,8 @@
 - `phone_click_2` — rozróżnia po numerze 548470249 (Cybulskiego)
 
 ### Do zrobienia na stronie
-- [ ] Dodać informację o promocji -50% na pierwsze strzyżenie dla Cybulskiego (tylko tel/osobista, nie Booksy) — do hero slajdu 1 lub sekcji #locations
+- [x] Dodać informację o promocji -50% — ✅ zrobione 2026-07-17 (baner w #services + pasek w #locations)
+- [ ] Osobny cennik dla Cybulskiego — strona ma jeden wspólny cennik (Poniatowskiego)
 
 ---
 
@@ -112,7 +143,9 @@
 ### Reklamy
 - **Reklama A** ("Fryzjer Wrocław"): CTR 4,56%, wsp. konw. 16,54% — słabsza
 - **Reklama B** ("Oceny i ceny", social proof): CTR 6,28%, wsp. konw. 19,09% — **wygrywająca**
-  - Kluczowe elementy: "5,0 z 1232 Opinii Google", "Strzyżenie od 60 zł", "Studenci i Uczniowie -10 zł"
+  - Kluczowe elementy: "5,0 z 1232 Opinii Google", "Studenci i Uczniowie -10 zł"
+  - "Strzyżenie od 60 zł" — **usunięty 2026-07-17** (ceny wzrosły, min. 70 zł)
+  - Dodany nagłówek z promocją -50% (2026-07-17)
 
 ### Słowa kluczowe — aktywne
 | Słowo | CTR | Koszt/konw. | WJ |
@@ -174,12 +207,13 @@
 "барбер Вроцлав"
 ```
 
-### Reklama RSA — nagłówki (bazowane na wygrywającej Reklamie B z Poniatowskiego)
+### Reklama RSA — nagłówki
 1. Barbershop LAB Wrocław | 2. Barbershop Wrocław | 3. Barber Wrocław
-4. 5,0 z 1232 Opinii Google | 5. Strzyżenie od 60 zł | 6. Studenci i Uczniowie -10 zł
+4. 5,0 z 1232 Opinii Google | 5. [nagłówek -50%] | 6. Studenci i Uczniowie -10 zł
 7. Umów się w 2 Minuty | 8. Dostępny Dziś — Umów Online | 9. Fade i Strzyżenie Wrocław
 10. Broda i Strzyżenie w 1 Miejscu | 11. Rezerwacja 24/7 przez Booksy | 12. Hot Shave Wrocław
 13. Najlepszy Barber Wrocław | 14. Barber Blisko Centrum | 15. Barbershop Cybulskiego Wrocław
+- "Strzyżenie od 60 zł" zastąpiony nagłówkiem z promocją -50% (2026-07-17)
 
 URL końcowy: https://barbershoplab.pl/
 
@@ -233,6 +267,10 @@ Cennik na stronie (/#services) jest aktualny i poprawny dla lokalu Cybulskiego. 
 | 2026-07-02 | Uruchomienie kampanii Cybulskiego (785-993-8647), budżet 34 zł/dzień |
 | 2026-07-02 | Skonfigurowano phone_click_2 jako konwersję w Cybulskiego |
 | 2026-07-02 | Wykluczające słowa kluczowe dodane do kampanii Cybulskiego |
+| 2026-07-17 | Aktualizacja cennika Poniatowskiego (+10 zł większość usług, nowe nazwy) |
+| 2026-07-17 | Dodano baner promocyjny -50% na stronie (#services + #locations) |
+| 2026-07-17 | Usunięto "Strzyżenie od 60 zł" z obu kampanii, dodano nagłówek -50% |
+| 2026-07-17 | Fix nakładania kropek hero slidera na przycisk (desktop + mobile) |
 
 ---
 
