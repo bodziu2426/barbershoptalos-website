@@ -122,40 +122,41 @@
 | Języki | polski, ukraiński, rosyjski |
 | Sieć | Tylko wyszukiwarka |
 
-### Wyniki — po optymalizacji 16.06 (okres 16.06–02.07.2026)
+### Wyniki — pełny okres po optymalizacji (16.06–22.09.2026, 98 dni)
 | Metryka | Wartość |
 |---|---|
-| Kliknięcia | 271 |
-| Wyświetlenia | 4 726 |
-| CTR | 5,73% |
-| Śr. CPC | 1,78 zł |
-| Koszt | 483,60 zł |
-| Konwersje | 50 |
-| Koszt/konwersja | 9,67 zł |
-| Wsp. konwersji | 18,45% |
-| Wynik optymalizacji | 57,45% (niski bo kampania ograniczona budżetem) |
+| Kliknięcia | 1 923 |
+| Wyświetlenia | 32 137 |
+| CTR | 5,98% |
+| Śr. CPC | 1,64 zł |
+| Koszt | 3 150,02 zł |
+| Konwersje | 223 |
+| Koszt/konwersja | 14,13 zł |
+| Wsp. konwersji | 11,60% |
+| Impression Share | 43,47% — LIDER rynku |
+| Wynik optymalizacji | 49,95% (alert: brak wystarczającej liczby trafnych słów kluczowych) |
 
-### Konwersje (stan 02.07.2026)
-- booksy_click: 36 | booksy_click_2: 17 (kampania Poniatowskiego napędza Cybulskiego!)
-- phone_click: 3 | Calls from ads: 1
-- Local actions - Directions: 42 | Other engagements: 159
+### Reklamy (stan 22.09.2026)
+- **Reklama 1** (social proof + ceny): 1432 kliknięcia, 184,58 konw, **13,12 zł/konw** — wygrywająca
+- **Reklama 2** (styl/klimat → przepisana 22.09.2026): 491 kliknięć, 38,42 konw, 18,95 zł/konw przed przepisaniem
+  - Przepisana 22.09: wymieniono 6 słabych nagłówków na konkretne liczby (ceny, opinie, oferty), opisy 3 i 4 zastąpione
 
-### Reklamy
-- **Reklama A** ("Fryzjer Wrocław"): CTR 4,56%, wsp. konw. 16,54% — słabsza
-- **Reklama B** ("Oceny i ceny", social proof): CTR 6,28%, wsp. konw. 19,09% — **wygrywająca**
-  - Kluczowe elementy: "5,0 z 1232 Opinii Google", "Studenci i Uczniowie -10 zł"
-  - "Strzyżenie od 60 zł" — **usunięty 2026-07-17** (ceny wzrosły, min. 70 zł)
-  - Dodany nagłówek z promocją -50% (2026-07-17)
-
-### Słowa kluczowe — aktywne
-| Słowo | CTR | Koszt/konw. | WJ |
-|---|---|---|---|
-| barbershop wrocław | 6,50% | 9,28 zł | 5 |
-| barber wrocław | 5,17% | 9,12 zł | 5 |
-| barber lab wrocław | 27,87% | 8,14 zł | 6 |
-| барбершоп Вроцлав | 6,15% | **2,93 zł** | 4 — najniższy CPA! |
-| барбер Вроцлав | 5,80% | 8,08 zł | 4 |
-| fryzjer męski wrocław | 5,36% | **46,68 zł** | 2 — do naprawy/wstrzymania |
+### Słowa kluczowe — aktywne (stan 22.09.2026)
+| Słowo | Kliknięcia | Konw. | Koszt/konw. | QS | Uwagi |
+|---|---|---|---|---|---|
+| barber wrocław | 765 | 111,75 | 12,97 zł | 7 | główna fraza |
+| barbershop wrocław | 386 | 44,08 | 14,49 zł | 3 | |
+| fryzjer męski wrocław | 187 | 16,00 | 18,42 zł | 2 | niska jakość, monitorować |
+| salon barber wrocław | 118 | 4,67 | 24,66 zł | — | drogo |
+| барбершоп Вроцлав | 91 | 21,50 | **7,83 zł** | 4 | ZŁOTO — najniższy CPA |
+| barber cennik wrocław | 83 | 3,00 | 34,98 zł | — | drogo |
+| barber blisko mnie | 94 | 4,00 | 26,12 zł | 1 | niska jakość |
+| barber lab wrocław | 66 | 6,00 | 12,28 zł | 9 | brand |
+| barber blisko | 23 | 5,00 | **5,33 zł** | 1 | QS=1 ale konwertuje! nie ruszać |
+| барбер Вроцлав | 35 | 4,00 | 17,40 zł | 4 | |
+| strzyżenie brody wrocław | 12 | 2,00 | 10,30 zł | 3 | |
+| golenie brody wrocław | 12 | 0 | — | — | **WSTRZYMANE 22.09.2026** |
+| перукарня Вроцлав | 51 | 1,00 | 74,23 zł | 2 | **WSTRZYMANE 22.09.2026** |
 
 ### Komponenty — sitelinki
 | Sitelink | Kliknięcia | CTR |
@@ -166,17 +167,23 @@
 | Umów wizytę (Booksy) | 42 | 5,36% |
 | Galeria realizacji | 19 | 2,65% — najsłabszy |
 
-### Wnioski i rekomendacje
-- Zwiększyć budżet do 50–60 zł/dzień (kampania ograniczona)
-- Wstrzymać/naprawić "fryzjer męski wrocław" (WJ=2, koszt 46 zł/konw.)
-- Rozbudować segment cyryliczny (najniższy CPA 2,93 zł)
-- Złoty slot: Czwartek 14:00–16:00
-- Mobile: 82,7% ruchu | Mężczyźni 25–34: 40,85% wyświetleń
+### Wnioski i rekomendacje (stan 22.09.2026)
+- Budżet 33 zł/dzień nadal ogranicza kampanię — kampania wydaje ~32 zł/dzień (limit). Dawid nie ma środków na zwiększenie na razie
+- барбершоп Вроцлав = złota fraza (7,83 zł/konw) — rozważyć wyższy priorytet
+- fryzjer blisko (QS=1) konwertuje za 5,33 zł/konw — nie ruszać mimo niskiego QS
+- "fryzjer wrocław" — świadomie NIE dodane jako słowo kluczowe (zbyt ogólne, już łapane przez broad match, ryzyko ruchu damskiego, ograniczony budżet)
+- Reklama 2 przepisana 22.09 — sprawdzić za 2-3 tygodnie czy zbliżyła się do Reklamy 1
+- Wynik optymalizacji 49,95% z alertem "brak trafnych słów kluczowych" — Google sugeruje rozszerzenie, nie spieszyć się bez analizy
 
-### Analiza aukcji — konkurencja
-- gentlemenbarber.pl: wygrywa w 86,55% aukcji — najgroźniejszy
-- booksy.com: wygrywa w 69,75% aukcji
-- warsztatfryzurmeskich.pl: 34,32% udziału w wyświetleniach
+### Analiza aukcji — konkurencja (stan 22.09.2026)
+| Konkurent | IS | Trend vs czerwiec |
+|---|---|---|
+| **Ty** | **43,47%** | ↑ (było 40,10%) — LIDER |
+| warsztatfryzurmeskich.pl | 32,06% | ↓ (było 36,33%) |
+| booksy.com | 21,16% | ↓ (było 25,73%) |
+| rudywasbarber.pl | 20,73% | ↓ (było 23,60%) |
+| gentlemenbarber.pl | 11,57% | ↓ (było 14,13%) — wyraźnie słabnie |
+| barberbus.pl | <10% | nowy gracz |
 
 ---
 
@@ -187,57 +194,92 @@
 |---|---|
 | Nazwa | Barbershop LAB - Cybulskiego |
 | Start | 02.07.2026 |
-| Budżet | 34 zł/dzień |
-| Strategia | Maksymalizuj kliknięcia (zmienić na Maks. konwersje ok. 16.07!) |
+| Budżet | 35 zł/dzień (ograniczona budżetem) |
+| Strategia | Maksymalizuj konwersje |
 | Targetowanie | Wrocław + 10 km |
 | Języki | polski, ukraiński, rosyjski |
 | Sieć | Tylko wyszukiwarka |
-| Status reklamy | W trakcie weryfikacji |
+| Skuteczność reklamy | Średnia (cel: Dobra) |
 
-### Słowa kluczowe (Grupa 1: Barbershop_Barber) — dopasowanie do wyrażenia
-```
-"barbershop wrocław"
-"barber wrocław"
-[barber lab wrocław]
-"salon barber wrocław"
-"barber cennik wrocław"
-[barbershop cybulskiego]
-"barber śródmieście wrocław"
-"барбершоп Вроцлав"
-"барбер Вроцлав"
-```
+### Wyniki (maks. zakres dat — od startu do 22.09.2026)
+| Metryka | Wartość | vs Poniatowskiego |
+|---|---|---|
+| Kliknięcia | 878 | — |
+| CTR | 5,60% | 5,98% Poni |
+| Śr. CPC | **3,17 zł** | 1,64 zł Poni — 2× drożej |
+| Koszt | 2 786,65 zł | — |
+| Konwersje | 59 | — |
+| Koszt/konw. | **47,23 zł** | 14,13 zł Poni — 3,3× drożej |
+| Wsp. konw. | 6,72% | 11,60% Poni |
+| IS | 32,22% | 43,47% Poni |
 
-### Reklama RSA — nagłówki
-1. Barbershop LAB Wrocław | 2. Barbershop Wrocław | 3. Barber Wrocław
-4. 5,0 z 1232 Opinii Google | 5. [nagłówek -50%] | 6. Studenci i Uczniowie -10 zł
-7. Umów się w 2 Minuty | 8. Dostępny Dziś — Umów Online | 9. Fade i Strzyżenie Wrocław
-10. Broda i Strzyżenie w 1 Miejscu | 11. Rezerwacja 24/7 przez Booksy | 12. Hot Shave Wrocław
-13. Najlepszy Barber Wrocław | 14. Barber Blisko Centrum | 15. Barbershop Cybulskiego Wrocław
-- "Strzyżenie od 60 zł" zastąpiony nagłówkiem z promocją -50% (2026-07-17)
+**Główny problem:** wyższy CPC wynika z niższego QS — lokal nowy, mniej historii. Poprawi się z czasem.
 
-URL końcowy: https://barbershoplab.pl/
+### Słowa kluczowe — aktywne (stan 22.09.2026)
+| Słowo | Kliknięcia | Konw. | Koszt/konw | Uwagi |
+|---|---|---|---|---|
+| barber wrocław | 497 | 34,5 | 47,00 zł | główna fraza |
+| barbershop wrocław | 192 | 14 | 38,54 zł | |
+| barber cennik wrocław | 33 | 4 | **25,38 zł** | najlepszy CPA |
+| barber śródmieście wrocław | 4 | 1 | 13,46 zł | obiecujące, mało danych |
+| [barbershop cybulskiego] | 0 | 0 | — | rzadko wyświetla |
+| fryzjer blisko | — | — | — | **dodane 22.09.2026** |
 
-### Komponenty
-- Sitelinki: Umów wizytę online (Booksy Cybulskiego), Lokalizacja i kontakt, Galeria realizacji
-- **Brak sitelinku do cennika** — ceny Cybulskiego niezweryfikowane vs Poniatowskiego
-- Telefon: +48 548 470 249
-- Objaśnienia: Hot shave we Wrocławiu, Strzyżenie i broda, Doświadczeni barberzy, Studenci -10 zł
+### Słowa kluczowe — wstrzymane (22.09.2026)
+- барбешоп Вроцлав (32 klik, 0 konw, QS=niska jakość, 97 zł przepalone)
+- барбер Вроцлав (10 klik, 0 konw)
+- salon barber wrocław (26 klik, 1 konw, 80 zł/konw)
+- [barber lab wrocław] (12 klik, 0,5 konw, 88 zł/konw — brand, trafią organicznie)
+
+### Reklama RSA (stan 22.09.2026)
+- Skuteczność: **Średnia**
+- Nagłówek 14 zmieniony z "Barber Blisko Centrum" → **"Barber Wrocław – Cybulskiego 3"** (22.09.2026)
+- Nie dodawać drugiej reklamy RSA dopóki lokal nie zbierze więcej opinii Google
+
+### Komponenty (stan 22.09.2026)
+**Sitelinki (6):**
+- Lokalizacja i kontakt → `/#locations` | CTR 4,97% | 473 kliknięcia — lider
+- Cennik usług → `/#services` | CTR 5,79% | 538 kliknięć — **najlepszy CTR**
+- Galeria realizacji → `/#gallery` | CTR 4,31%
+- Umów wizytę online → Booksy Cybulskiego | CTR 4,79%
+- Pierwsze strzyżenie -50% → `/#locations` | **dodany 22.09.2026**
+- Hot Shave Wrocław → `/#services` | **dodany 22.09.2026**
+
+**Telefon:** +48 548 470 249 (123 kliknięcia, CTR 2,56%)
 
 ### Konwersje
-- phone_click_2: ✅ aktywne (kategoria: Połączenie telefoniczne, źródło GA4)
-- booksy_click_2: ✅ aktywne (kategoria: Zakupy, źródło GA4, utworzone 30.06.2026, pierwsza konwersja 03.07.2026)
+- phone_click_2: ✅ aktywne
+- booksy_click_2: ✅ aktywne (pierwsza konwersja 03.07.2026)
 
-### Wykluczające słowa kluczowe
-Pełna lista z Poniatowskiego (75 fraz) + dodatkowo:
+### Wykluczające słowa kluczowe (stan 22.09.2026)
+Pełna lista z Poniatowskiego + dodatkowo:
 - damski, kobieta, kobiety, dziecko, dzieci, szkolenie, kurs barberski, coworking, wynajem fotela
 - poniatowskiego, barber lab poniatowskiego, praca, zatrudnienie, tatuaż, fryzjer damski, salon damski
 - gentleman, gentlemen barber, rudy was, barber bus
+- warsztat fryzur męskich, gentlemen barber shop, barberbus, stylehub, black beard, hope barber
+- french cut, the court barber, plan b barbershop, cousins barber, express barbershop
+- barber psie pole, barber gaj, barber legnicka, barber racławicka, barber olimpia port, barber osobowice
+- poriadok barbershop, puggies barbershop
+
+### Analiza aukcji (22.09.2026)
+| Konkurent | IS |
+|---|---|
+| **Ty** | **32,22%** |
+| warsztatfryzurmeskich.pl | 30,09% — bardzo blisko! |
+| booksy.com | 18,15% |
+| rudywasbarber.pl | 13,23% |
+| gentlemenbarber.pl | <10% |
+| barberbus.pl | <10% |
 
 ### Do zrobienia dla Cybulskiego
-- [x] Dodać booksy_click_2 jako konwersję — ✅ aktywne od 30.06.2026
-- [ ] Zmienić strategię na Maks. konwersje ok. 16.07 (po ~2 tygodniach zbierania danych)
+- [x] Dodać booksy_click_2 jako konwersję — ✅
+- [x] Zmienić strategię na Maks. konwersje — ✅
+- [x] Wstrzymać słabe słowa kluczowe (22.09.2026) — ✅
+- [x] Dodać wykluczające słowa kluczowe (22.09.2026) — ✅
+- [x] Dodać 2 sitelinki (22.09.2026) — ✅
+- [x] Poprawić nagłówek reklamy (22.09.2026) — ✅
 - [ ] Zmiana nazwy płatnika na E.B. Barber Edik Babayan — czekamy na weryfikację CEIDG
-- [ ] Nie dodawać drugiej reklamy RSA dopóki Cybulskiego nie zbierze własnych opinii Google
+- [ ] Dodać drugą reklamę RSA gdy lokal zbierze więcej opinii Google
 
 ---
 
@@ -271,6 +313,14 @@ Cennik na stronie (/#services) jest aktualny i poprawny dla lokalu Cybulskiego. 
 | 2026-07-17 | Dodano baner promocyjny -50% na stronie (#services + #locations) |
 | 2026-07-17 | Usunięto "Strzyżenie od 60 zł" z obu kampanii, dodano nagłówek -50% |
 | 2026-07-17 | Fix nakładania kropek hero slidera na przycisk (desktop + mobile) |
+| 2026-09-22 | Wstrzymano: перукарня Вроцлав (74 zł/konw), golenie brody wrocław (0 konw) |
+| 2026-09-22 | Dodano 26 wykluczających słów kluczowych — marki konkurencji (brux, mario mayer, gentlemen barber, klasyk barber, barber pereca, turkish barber, barber jurand, ortego, kingstyle, the crew barbershop, pablo barber, piana barbershop, twarowski barber, bro barbershop, ricky barber, barberzz, octopus barber, level barbers, vip barbershop, barber chachaja, barbershop cartel, street barbershop, stara szkoła barber, mens club barbershop, barber kiełczów, barber smolec) |
+| 2026-09-22 | Cybulskiego: wstrzymano барбешоп Вроцлав, барбер Вроцлав, salon barber wrocław, barber lab wrocław — łącznie ~240 zł przy 1,5 konwersji |
+| 2026-09-22 | Cybulskiego: dodano wykluczające (warsztat fryzur męskich, gentlemen barber shop, barberbus, stylehub, black beard, hope barber, french cut, the court barber, plan b barbershop, cousins barber, express barbershop, barber psie pole, barber gaj, barber legnicka, barber racławicka, barber olimpia port, barber osobowice, poriadok barbershop, puggies barbershop) |
+| 2026-09-22 | Cybulskiego: dodano 2 sitelinki (Pierwsze strzyżenie -50%, Hot Shave Wrocław) |
+| 2026-09-22 | Cybulskiego: nagłówek 14 zmieniony na "Barber Wrocław – Cybulskiego 3" (poprawa QS) |
+| 2026-09-22 | Cybulskiego: dodano słowo kluczowe "fryzjer blisko" (na Poniatowskim konwertuje za 5,33 zł) |
+| 2026-09-22 | Reklama 2 przepisana — wymieniono 6 słabych nagłówków (Twój styl nasz fach, Klimatyczny barbershop, Strzyżenie maszynką, Golenie brody u barbera, Barber Blisko Ciebie, Męski salon fryzjerski Wrocław) na konkretne (Ocena 5,0 z 1262 Opinii, Pierwsze Strzyżenie -50%, Wolny Termin Już Dziś, Strzyżenie od 70 zł, Studenci -10 zł na Wizytę, Umów w 2 Minuty Online). Opisy 3 i 4 zastąpione konkretnymi z liczbami |
 
 ---
 
