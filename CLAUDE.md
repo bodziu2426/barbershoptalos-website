@@ -100,13 +100,17 @@
 |---|---|---|
 | MCC | KZ Marketing | 918-590-8201 |
 | Subkonto 1 | Barbershop LAB - Poniatowskiego | 959-699-5699 |
-| Subkonto 2 | Barbershop LAB - Cybulskiego | 785-993-8647 |
+| Osobne konto główne (poza KZ Marketing) | Barbershop LAB | 159-169-5743 |
+| Konto Cybulskiego (pod Barbershop LAB — do potwierdzenia) | Barbershop LAB - Cybulskiego | 785-993-8647 |
 
-**Profil płatności:** 3968-6733-2528 (ASS Klecha Dawid) — **współdzielony przez oba subkonta!**
+Oba konta główne są dostępne z jednego loginu Google (krzysztofzaraza@gmail.com).
+
+**Profil płatności:** 3968-6733-2528 (ASS Klecha Dawid) — profil Dawida, używany przez Poniatowskiego (Cybulskiego ma osobny profil — potwierdzone 2026-10-06)
 - Karta Dawida (Mastercard ****4313) — podstawowa na subkoncie Poniatowskiego
 - Karta Edka (Mastercard ****4653) — podstawowa na subkoncie Cybulskiego
 - NIP Dawida: 8942804688 (w systemie od 12.05.2026, status: Przyjęta)
-- Zmiana nazwy na E.B. Barber Edik Babayan: w trakcie weryfikacji (CEIDG przesłane 02.07.2026)
+- Konto Cybulskiego było założone na Edika (własny profil płatności: E.B. BARBER EDIK BABAYAN, ID 6252-5767-3132; pod tym samym loginem jest też prywatny profil Krzysztof Zaraza 5783-3610-3154). Edik zmienił działalność i faktury z Cybulskiego mają przychodzić na firmę Dawida
+- Próba zmiany nazwy na profilu: **ODRZUCONA** przez Google ("Account transfers are not allowed", stan 2026-10-06) — nazwy profilu nie da się zmienić na inny podmiot; rozwiązanie: przepiąć konto Cybulskiego na profil płatności Dawida
 
 ---
 
@@ -279,7 +283,7 @@ Pełna lista z Poniatowskiego + dodatkowo:
 - [x] Dodać wykluczające słowa kluczowe (22.09.2026) — ✅
 - [x] Dodać 2 sitelinki (22.09.2026) — ✅
 - [x] Poprawić nagłówek reklamy (22.09.2026) — ✅
-- [ ] Zmiana nazwy płatnika na E.B. Barber Edik Babayan — czekamy na weryfikację CEIDG
+- [ ] Faktury z Cybulskiego na firmę Dawida — zmiana nazwy odrzucona (2026-10-06), trzeba przepiąć konto Cybulskiego na profil płatności Dawida (3968-6733-2528)
 - [ ] Dodać drugą reklamę RSA gdy lokal zbierze więcej opinii Google
 
 ---
