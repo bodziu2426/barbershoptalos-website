@@ -7,7 +7,8 @@
 - **Telefon:** +48 663 537 777
 - **Strona:** barbershoplab.pl
 - **Rezerwacje:** https://booksy.com/pl-pl/64196_lab-barber-shop_barber-shop_13750_wroclaw
-- **Opinie:** 5,0 z 1232+ opinii Google
+- **Opinie Google:** 4,9 z 251 opinii (stan 2026-10-06)
+- **Opinie Booksy:** 5,0 z 1364 opinii (stan 2026-10-06)
 
 ---
 
@@ -289,7 +290,8 @@ Pełna lista z Poniatowskiego + dodatkowo:
 - **Telefon:** +48 548 470 249
 - **Email:** labbarbershop88@gmail.com
 - **Booksy:** https://booksy.com/pl-pl/348343_lab-barber-shop-2_barber-shop_13750_wroclaw
-- **Opinie:** 5,0 (nowy lokal, mała liczba opinii)
+- **Opinie Google:** 5,0 z 95 opinii (stan 2026-10-06)
+- **Opinie Booksy:** 5,0 z 60 opinii (stan 2026-10-06)
 - **Promocja:** -50% na pierwsze strzyżenie — tylko rejestracja telefoniczna lub osobista (NIE przez Booksy)
 
 ### Cennik Lokal 2 — ZWERYFIKOWANY (03.07.2026)
