@@ -74,7 +74,7 @@
 
 **UWAGA:** Cennik Cybulskiego jest inny — strona www ma jeden wspólny cennik (Poniatowskiego). Nie aktualizować bez osobnego cennika Cybulskiego.
 
-### Promocja -50% (stan 2026-07-17)
+### Promocja -50% — ZAKOŃCZONA 2026-10-21 (usunięta ze strony i z Google Ads; poniżej opis historyczny)
 - Pierwsze strzyżenie -50% — obowiązuje w **obu lokalach**
 - Warunek: tylko rezerwacja **telefoniczna lub osobista** w salonie
 - NIE dotyczy rezerwacji przez Booksy
@@ -86,7 +86,7 @@
 - **Google Ads tag:** AW-18153696875 (w `<head>`, scalony z GA4 w jeden gtag block)
 - **Konwersje:** skrypt na dole `<body>` — zdarzenia `booksy_click`, `phone_click`, `booksy_click_2`, `phone_click_2`
 - `booksy_click_2` — rozróżnia po numerze Booksy 348343 (Cybulskiego)
-- `phone_click_2` — rozróżnia po numerze 548470249 (Cybulskiego)
+- `phone_click_2` — rozróżnia po numerze 538470249 (Cybulskiego)
 
 ### Do zrobienia na stronie
 - [x] Dodać informację o promocji -50% — ✅ zrobione 2026-07-17 (baner w #services + pasek w #locations)
@@ -100,8 +100,8 @@
 |---|---|---|
 | MCC | KZ Marketing | 918-590-8201 |
 | Subkonto 1 | Barbershop LAB - Poniatowskiego | 959-699-5699 |
-| Osobne konto główne (poza KZ Marketing) | Barbershop LAB | 159-169-5743 |
-| Konto Cybulskiego (pod Barbershop LAB — do potwierdzenia) | Barbershop LAB - Cybulskiego | 785-993-8647 |
+| Konto Cybulskiego (osobne, poza KZ Marketing) — **potwierdzone 2026-10-21: kampania „Cybulskiego” jest na tym koncie** | Barbershop LAB | 159-169-5743 |
+| Wcześniej wpisane jako konto Cybulskiego — **nieaktualne/do wyjaśnienia** | Barbershop LAB - Cybulskiego | 785-993-8647 |
 
 Oba konta główne są dostępne z jednego loginu Google (krzysztofzaraza@gmail.com).
 
@@ -247,10 +247,10 @@ Oba konta główne są dostępne z jednego loginu Google (krzysztofzaraza@gmail.
 - Cennik usług → `/#services` | CTR 5,79% | 538 kliknięć — **najlepszy CTR**
 - Galeria realizacji → `/#gallery` | CTR 4,31%
 - Umów wizytę online → Booksy Cybulskiego | CTR 4,79%
-- Pierwsze strzyżenie -50% → `/#locations` | **dodany 22.09.2026**
+- ~~Pierwsze strzyżenie -50% → `/#locations`~~ | dodany 22.09.2026, **usunięty 2026-10-21**
 - Hot Shave Wrocław → `/#services` | **dodany 22.09.2026**
 
-**Telefon:** +48 548 470 249 (123 kliknięcia, CTR 2,56%)
+**Telefon:** +48 538 470 249 (123 kliknięcia, CTR 2,56%) — uwaga: komponent telefonu w Google Ads miał błędny numer 548 470 249 (stan 2026-10-21: Nieodpowiednia / odrzucona, niezweryfikowany numer) — poprawić na 538
 
 ### Konwersje
 - phone_click_2: ✅ aktywne
@@ -291,7 +291,7 @@ Pełna lista z Poniatowskiego + dodatkowo:
 ## Lokal 2 — Cybulskiego 3
 
 - **Adres:** ul. Wojciecha Cybulskiego 3, Wrocław
-- **Telefon:** +48 548 470 249
+- **Telefon:** +48 538 470 249
 - **Email:** labbarbershop88@gmail.com
 - **Booksy:** https://booksy.com/pl-pl/348343_lab-barber-shop-2_barber-shop_13750_wroclaw
 - **Opinie Google:** 5,0 z 95 opinii (stan 2026-10-06)
@@ -327,6 +327,8 @@ Cennik na stronie (/#services) jest aktualny i poprawny dla lokalu Cybulskiego. 
 | 2026-09-22 | Cybulskiego: nagłówek 14 zmieniony na "Barber Wrocław – Cybulskiego 3" (poprawa QS) |
 | 2026-09-22 | Cybulskiego: dodano słowo kluczowe "fryzjer blisko" (na Poniatowskim konwertuje za 5,33 zł) |
 | 2026-09-22 | Reklama 2 przepisana — wymieniono 6 słabych nagłówków (Twój styl nasz fach, Klimatyczny barbershop, Strzyżenie maszynką, Golenie brody u barbera, Barber Blisko Ciebie, Męski salon fryzjerski Wrocław) na konkretne (Ocena 5,0 z 1262 Opinii, Pierwsze Strzyżenie -50%, Wolny Termin Już Dziś, Strzyżenie od 70 zł, Studenci -10 zł na Wizytę, Umów w 2 Minuty Online). Opisy 3 i 4 zastąpione konkretnymi z liczbami |
+| 2026-10-21 | Usunięto promocję -50% ze strony (baner w #services, paski w #locations, style CSS) i z Google Ads (nagłówki i opisy w obu reklamach Poniatowskiego i RSA Cybulskiego, sitelink Cybulskiego). Zniżka studencka -10 zł (hero, cennik) zostaje |
+| 2026-10-21 | Cybulskiego (konto 159-169-5743): poprawiono numer telefonu w Google Ads na +48 538 470 249 (wcześniej błędny 548 470 249 — odrzucony, brak przycisku zadzwoń od 05.07); dodano 6 objaśnień; dodano komponent Lokalizacja (Profil Firmy, status do sprawdzenia); rozszerzenie informacji jeszcze niedodane |
 
 ---
 
