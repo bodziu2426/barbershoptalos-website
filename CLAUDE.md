@@ -18,6 +18,15 @@
 - Struktura: index.html, css/, js/, img/
 - Ścieżki sitelinków w reklamach: /#services, /#gallery, /#locations
 
+### Wersje językowe (dodane 2026-11-15)
+- PL (domyślna): `index.html` → barbershoplab.pl/
+- ENG: `en/index.html` → barbershoplab.pl/en/ (osobny plik, ścieżki do assetów `../css`, `../img`, `../js`)
+- Przełącznik `PL | ENG` w `<nav>` (`.lang-switch`): desktop — na prawo od „Lokalizacje”, mobile — na lewo od hamburgera. Brak automatycznego przekierowania po języku przeglądarki
+- Linki w przełączniku prowadzą do `index.html` / `en/index.html` (żeby działały też po otwarciu pliku lokalnie); canonical i hreflang wskazują czyste URL-e (`/` i `/en/`)
+- Ceny w ENG w PLN; opinie klientów przetłumaczone z adnotacją „Reviews translated from Polish"; id sekcji (#szkolenia itd.) zostają identyczne w obu wersjach
+- **Każda zmiana treści/cennika w `index.html` wymaga ręcznego powtórzenia w `en/index.html`**
+- `sitemap.xml` zawiera oba adresy z `xhtml:link` hreflang
+
 ### Sekcje strony (kolejność)
 1. `#hero` — slider 4 slajdów: Barbershop → Szkolenia → Coworking → Atmosfera
 2. `#about` — O nas

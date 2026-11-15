@@ -102,6 +102,9 @@ header a:hover {
 
 nav {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 nav ul {
@@ -129,6 +132,32 @@ nav ul li a:hover {
     font-size: 28px;
     cursor: pointer;
     color: #e8e8e8;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #555555;
+}
+
+.lang-switch a {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #e8e8e8;
+}
+
+.lang-switch a.active {
+    color: #c59d5f;
+}
+
+.reviews-note {
+    text-align: center;
+    font-size: 13px;
+    color: #777777;
+    margin: -10px 0 24px;
 }
 
 /* ── REVEAL ANIMATION ──────────────────────── */
@@ -1393,6 +1422,11 @@ footer {
         padding: 24px 20px;
     }
 
+    nav {
+        height: 100%;
+        gap: 16px;
+    }
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -1401,7 +1435,7 @@ footer {
         border: 1px solid #2e2e2e;
         padding: 8px 0;
         position: absolute;
-        top: 60px;
+        top: 97px;
         right: 0;
         width: 180px;
         z-index: 9;
@@ -1424,11 +1458,15 @@ footer {
         pointer-events: auto;
     }
 
+    .lang-switch {
+        order: 1;
+    }
+
     .hamburger {
         display: block;
-        position: absolute;
-        right: 0;
-        top: -20px;
+        order: 2;
+        position: relative;
+        top: -3px;
         z-index: 10;
     }
 }
