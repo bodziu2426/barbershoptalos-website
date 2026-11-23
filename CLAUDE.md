@@ -130,7 +130,7 @@ Oba konta główne są dostępne z jednego loginu Google (krzysztofzaraza@gmail.
 |---|---|
 | Nazwa | Barbershop LAB Search |
 | Start | 2026-05-13 |
-| Budżet | 33 zł/dzień (ograniczona budżetem — wymaga zwiększenia do 50–60 zł) |
+| Budżet | **16,70 zł/dzień** (zmieniono 23.11.2026 z 33 zł — test przesunięcia budżetu na Cybulskiego) |
 | Strategia | Maksymalizuj konwersje |
 | Targetowanie | Wrocław + 10 km |
 | Języki | polski, ukraiński, rosyjski |
@@ -150,54 +150,51 @@ Oba konta główne są dostępne z jednego loginu Google (krzysztofzaraza@gmail.
 | Impression Share | 43,47% — LIDER rynku |
 | Wynik optymalizacji | 49,95% (alert: brak wystarczającej liczby trafnych słów kluczowych) |
 
-### Reklamy (stan 22.09.2026)
-- **Reklama 1** (social proof + ceny): 1432 kliknięcia, 184,58 konw, **13,12 zł/konw** — wygrywająca
-- **Reklama 2** (styl/klimat → przepisana 22.09.2026): 491 kliknięć, 38,42 konw, 18,95 zł/konw przed przepisaniem
-  - Przepisana 22.09: wymieniono 6 słabych nagłówków na konkretne liczby (ceny, opinie, oferty), opisy 3 i 4 zastąpione
+### Wyniki — 22.09–23.11.2026 (63 dni)
+| Metryka | Wartość | Zmiana vs poprzedni okres |
+|---|---|---|
+| Kliknięcia | 1 347 | — |
+| Wyświetlenia | 17 353 | — |
+| CTR | 7,76% | — |
+| Śr. CPC | 1,52 zł | ✅ -7% |
+| Koszt | 2 046,31 zł | — |
+| Konwersje | 214,97 | — |
+| Koszt/konwersja | **9,52 zł** | ✅ -33% (najlepszy w historii) |
+| Wsp. konwersji | 15,96% | ✅ +38% |
+| Impression Share | 32,69% | ⚠️ -11 pp (budżet) |
+| Wynik optymalizacji | 47,58% | — |
 
-### Słowa kluczowe — aktywne (stan 22.09.2026)
+### Reklamy (stan 23.11.2026)
+- **Reklama 1** (social proof + ceny): 850 kliknięć, 159,97 konw, **9,22 zł/konw**, conv rate 18,82% — wygrywająca
+- **Reklama 2** (przepisana 22.09): 497 kliknięć, 55,00 konw, **10,40 zł/konw**, conv rate 11,07% — poprawa z 18,95 zł po przepisaniu
+
+### Słowa kluczowe — aktywne (stan 23.11.2026)
 | Słowo | Kliknięcia | Konw. | Koszt/konw. | QS | Uwagi |
 |---|---|---|---|---|---|
-| barber wrocław | 765 | 111,75 | 12,97 zł | 7 | główna fraza |
-| barbershop wrocław | 386 | 44,08 | 14,49 zł | 3 | |
-| fryzjer męski wrocław | 187 | 16,00 | 18,42 zł | 2 | niska jakość, monitorować |
-| salon barber wrocław | 118 | 4,67 | 24,66 zł | — | drogo |
-| барбершоп Вроцлав | 91 | 21,50 | **7,83 zł** | 4 | ZŁOTO — najniższy CPA |
-| barber cennik wrocław | 83 | 3,00 | 34,98 zł | — | drogo |
-| barber blisko mnie | 94 | 4,00 | 26,12 zł | 1 | niska jakość |
-| barber lab wrocław | 66 | 6,00 | 12,28 zł | 9 | brand |
-| barber blisko | 23 | 5,00 | **5,33 zł** | 1 | QS=1 ale konwertuje! nie ruszać |
-| барбер Вроцлав | 35 | 4,00 | 17,40 zł | 4 | |
-| strzyżenie brody wrocław | 12 | 2,00 | 10,30 zł | 3 | |
-| golenie brody wrocław | 12 | 0 | — | — | **WSTRZYMANE 22.09.2026** |
-| перукарня Вроцлав | 51 | 1,00 | 74,23 zł | 2 | **WSTRZYMANE 22.09.2026** |
+| barber wrocław | 1 126 | 183,47 | 9,37 zł | 5 | główna fraza |
+| fryzjer męski wrocław | 107 | 24,50 | **7,60 zł** | 4 | REWELACJA — QS wzrósł z 2, efekt SEO strony |
+| барбершоп Вроцлав | 49 | 6,00 | 13,35 zł | 4 | było 7,83 zł — pogorszyło się, monitorować |
+| salon barber wrocław | 8 | 1,00 | 9,63 zł | — | |
+| барбер Вроцлав | 9 | 0 | — | 6 | mało danych |
+| barbershop wrocław | 8 | 0 | — | 3 | mało danych |
+| barber cennik wrocław | 2 | 0 | — | — | mało danych |
+| golenie brody wrocław | 0 | 0 | — | — | WSTRZYMANE 22.09.2026 |
+| перукарня Вроцлав | 0 | 0 | — | 2 | WSTRZYMANE 22.09.2026 |
+| barber blisko mnie | 0 | 0 | — | — | **WSTRZYMANE 23.11.2026** (23 klik, 0 konw, 19,86 zł przepalone) |
+| fryzjer blisko | 0 | 0 | — | — | **WSTRZYMANE 23.11.2026** (0 konw) |
 
-### Komponenty — sitelinki
-| Sitelink | Kliknięcia | CTR |
+### Nowe słowa kluczowe (dodane 23.11.2026)
+4 nowe frazy dodane po analizie alertu "brak trafnych słów kluczowych" — do weryfikacji po 4 tygodniach.
+
+### Analiza aukcji (stan 23.11.2026)
+| Konkurent | IS | Zmiana vs 22.09 |
 |---|---|---|
-| Telefon 663 537 777 | **108** | 6,26% — lider! |
-| Cennik usług | 76 | 6,98% |
-| Lokalizacja i kontakt | 42 | 5,12% |
-| Umów wizytę (Booksy) | 42 | 5,36% |
-| Galeria realizacji | 19 | 2,65% — najsłabszy |
-
-### Wnioski i rekomendacje (stan 22.09.2026)
-- Budżet 33 zł/dzień nadal ogranicza kampanię — kampania wydaje ~32 zł/dzień (limit). Dawid nie ma środków na zwiększenie na razie
-- барбершоп Вроцлав = złota fraza (7,83 zł/konw) — rozważyć wyższy priorytet
-- fryzjer blisko (QS=1) konwertuje za 5,33 zł/konw — nie ruszać mimo niskiego QS
-- "fryzjer wrocław" — świadomie NIE dodane jako słowo kluczowe (zbyt ogólne, już łapane przez broad match, ryzyko ruchu damskiego, ograniczony budżet)
-- Reklama 2 przepisana 22.09 — sprawdzić za 2-3 tygodnie czy zbliżyła się do Reklamy 1
-- Wynik optymalizacji 49,95% z alertem "brak trafnych słów kluczowych" — Google sugeruje rozszerzenie, nie spieszyć się bez analizy
-
-### Analiza aukcji — konkurencja (stan 22.09.2026)
-| Konkurent | IS | Trend vs czerwiec |
-|---|---|---|
-| **Ty** | **43,47%** | ↑ (było 40,10%) — LIDER |
-| warsztatfryzurmeskich.pl | 32,06% | ↓ (było 36,33%) |
-| booksy.com | 21,16% | ↓ (było 25,73%) |
-| rudywasbarber.pl | 20,73% | ↓ (było 23,60%) |
-| gentlemenbarber.pl | 11,57% | ↓ (było 14,13%) — wyraźnie słabnie |
-| barberbus.pl | <10% | nowy gracz |
+| **Ty** | **32,69%** | ⚠️ -11 pp (budżet) — wciąż LIDER |
+| warsztatfryzurmeskich.pl | <10% | ✅ zniknęli z 32% |
+| booksy.com | 24,00% | ⚠️ rośnie |
+| gentlemenbarber.pl | 13,79% | ➡️ stabilni |
+| barberbus.pl | <10% | ➡️ |
+| barberzz.pl | <10% | 🆕 nowy gracz |
 
 ---
 
@@ -208,7 +205,7 @@ Oba konta główne są dostępne z jednego loginu Google (krzysztofzaraza@gmail.
 |---|---|
 | Nazwa | Barbershop LAB - Cybulskiego |
 | Start | 02.07.2026 |
-| Budżet | 35 zł/dzień (ograniczona budżetem) |
+| Budżet | **50,00 zł/dzień** (zmieniono 23.11.2026 z 35 zł — test przesunięcia budżetu z Poniatowskiego) |
 | Strategia | Maksymalizuj konwersje |
 | Targetowanie | Wrocław + 10 km |
 | Języki | polski, ukraiński, rosyjski |
@@ -239,16 +236,49 @@ Oba konta główne są dostępne z jednego loginu Google (krzysztofzaraza@gmail.
 | [barbershop cybulskiego] | 0 | 0 | — | rzadko wyświetla |
 | fryzjer blisko | — | — | — | **dodane 22.09.2026** |
 
-### Słowa kluczowe — wstrzymane (22.09.2026)
-- барбешоп Вроцлав (32 klik, 0 konw, QS=niska jakość, 97 zł przepalone)
-- барбер Вроцлав (10 klik, 0 konw)
-- salon barber wrocław (26 klik, 1 konw, 80 zł/konw)
-- [barber lab wrocław] (12 klik, 0,5 konw, 88 zł/konw — brand, trafią organicznie)
+### Słowa kluczowe — aktywne (stan 23.11.2026)
+| Słowo | Kliknięcia | Konw. | Koszt/konw. | Uwagi |
+|---|---|---|---|---|
+| barber wrocław | 885 | 91,55 | 22,41 zł | **96% całego ruchu — ryzyko** |
+| barbershop wrocław | 30 | 3,25 | 20,09 zł | OK |
+| fryzjer blisko | 3 | 0 | — | WSTRZYMANE 23.11.2026 (niska jakość) |
+| barber śródmieście wrocław | 0 | 0 | — | WSTRZYMANE 23.11.2026 (niska jakość, 0 wyśw.) |
+| barber cennik wrocław | 0 | 0 | — | 0 wyświetleń |
+| barbershop cybulskiego | 0 | 0 | — | nikt tego nie szuka |
 
-### Reklama RSA (stan 22.09.2026)
+### Nowe słowa kluczowe (dodane 23.11.2026)
+4 nowe frazy dodane w celu dywersyfikacji (96% ruchu z jednej frazy to ryzyko) — do weryfikacji po 4 tygodniach.
+
+### Wyniki kampanii (22.09–23.11.2026, 63 dni)
+| Metryka | Wartość | Zmiana vs poprzedni |
+|---|---|---|
+| CPC | 2,32 zł | ✅ -27% (było 3,17) |
+| Wsp. konwersji | 10,33% | ✅ +54% (było 6,72%) |
+| Koszt/konw. | **22,44 zł** | ✅ -53% (było 47,23) |
+| IS | 26,17% | ⚠️ -6 pp |
+| Wynik optymalizacji | 65,62% | ✅ dobry |
+
+### Słowa kluczowe — wstrzymane
+- барбешоп Вроцлав (32 klik, 0 konw, QS=niska jakość, 97 zł przepalone) — 22.09.2026
+- барбер Вроцлав (10 klik, 0 konw) — 22.09.2026
+- salon barber wrocław (26 klik, 1 konw, 80 zł/konw) — 22.09.2026
+- [barber lab wrocław] (12 klik, 0,5 konw, 88 zł/konw — brand, trafią organicznie) — 22.09.2026
+- barber śródmieście wrocław (niska jakość, 0 wyświetleń) — 23.11.2026
+- fryzjer blisko (niska jakość, 0 konwersji) — 23.11.2026
+
+### Reklamy RSA (stan 23.11.2026)
+
+**Reklama 1** (aktywna od 02.07.2026)
 - Skuteczność: **Średnia**
-- Nagłówek 14 zmieniony z "Barber Blisko Centrum" → **"Barber Wrocław – Cybulskiego 3"** (22.09.2026)
-- Nie dodawać drugiej reklamy RSA dopóki lokal nie zbierze więcej opinii Google
+- Fokus: cena, szybkość rezerwacji, ogólny branding
+- Nagłówek 14: "Barber Wrocław – Cybulskiego 3" (zmieniony 22.09.2026)
+
+**Reklama 2** (dodana 23.11.2026)
+- Skuteczność: **Świetna**
+- Fokus: lokalizacja, opinie Google, hot shave
+- Nagłówki (15): Barbershop LAB Wrocław, Barber Wrocław – Cybulskiego 3, Barbershop Wrocław Centrum, Barber Blisko Centrum, Hot Shave Wrocław, Golenie Brody Wrocław, Strzyżenie Brody Wrocław, Fade i Broda Wrocław, Barber Śródmieście Wrocław, Wolny Termin Dziś, Umów Wizytę 24/7, Sprawdź Cennik Online, Precyzyjne Strzyżenie, Barber od 70 zł, 5,0 z [X] Opinii Google
+- Opisy (4): social proof z opiniami Google | lokalizacja Cybulskiego 3 + cena | hot shave/fade/broda | godziny otwarcia 7 dni do 20:00
+- Ścieżka: barbershoplab.pl / barber-wroclaw / cybulskiego
 
 ### Komponenty (stan 22.09.2026)
 **Sitelinki (6):**
@@ -275,15 +305,14 @@ Pełna lista z Poniatowskiego + dodatkowo:
 - barber psie pole, barber gaj, barber legnicka, barber racławicka, barber olimpia port, barber osobowice
 - poriadok barbershop, puggies barbershop
 
-### Analiza aukcji (22.09.2026)
-| Konkurent | IS |
-|---|---|
-| **Ty** | **32,22%** |
-| warsztatfryzurmeskich.pl | 30,09% — bardzo blisko! |
-| booksy.com | 18,15% |
-| rudywasbarber.pl | 13,23% |
-| gentlemenbarber.pl | <10% |
-| barberbus.pl | <10% |
+### Analiza aukcji (stan 23.11.2026)
+| Konkurent | IS (22.09) | IS (23.11) |
+|---|---|---|
+| **Ty** | 32,22% | **26,17%** ⚠️ |
+| warsztatfryzurmeskich.pl | 30,09% | <10% ✅ zniknęli |
+| booksy.com | 18,15% | 20,82% ⚠️ rośnie |
+| gentlemenbarber.pl | <10% | <10% |
+| barberbus.pl | <10% | <10% |
 
 ### Do zrobienia dla Cybulskiego
 - [x] Dodać booksy_click_2 jako konwersję — ✅
@@ -338,6 +367,15 @@ Cennik na stronie (/#services) jest aktualny i poprawny dla lokalu Cybulskiego. 
 | 2026-09-22 | Reklama 2 przepisana — wymieniono 6 słabych nagłówków (Twój styl nasz fach, Klimatyczny barbershop, Strzyżenie maszynką, Golenie brody u barbera, Barber Blisko Ciebie, Męski salon fryzjerski Wrocław) na konkretne (Ocena 5,0 z 1262 Opinii, Pierwsze Strzyżenie -50%, Wolny Termin Już Dziś, Strzyżenie od 70 zł, Studenci -10 zł na Wizytę, Umów w 2 Minuty Online). Opisy 3 i 4 zastąpione konkretnymi z liczbami |
 | 2026-10-21 | Usunięto promocję -50% ze strony (baner w #services, paski w #locations, style CSS) i z Google Ads (nagłówki i opisy w obu reklamach Poniatowskiego i RSA Cybulskiego, sitelink Cybulskiego). Zniżka studencka -10 zł (hero, cennik) zostaje |
 | 2026-10-21 | Cybulskiego (konto 159-169-5743): poprawiono numer telefonu w Google Ads na +48 538 470 249 (wcześniej błędny 548 470 249 — odrzucony, brak przycisku zadzwoń od 05.07); dodano 6 objaśnień; dodano komponent Lokalizacja (Profil Firmy, status do sprawdzenia); rozszerzenie informacji jeszcze niedodane |
+| 2026-11-23 | Poniatowskiego: wstrzymano "barber blisko mnie" (23 klik, 0 konw, 19,86 zł przepalone) i "fryzjer blisko" (0 konw) |
+| 2026-11-23 | Poniatowskiego: dodano nowe słowa kluczowe (4 szt.) |
+| 2026-11-23 | Cybulskiego: usunięto błędny numer telefonu 663 537 777 (Poniatowskiego) z konta Cybulskiego |
+| 2026-11-23 | Cybulskiego: wstrzymano "barber śródmieście wrocław" i "fryzjer blisko" (niska jakość, 0 konwersji) |
+| 2026-11-23 | Cybulskiego: dodano Reklamę 2 RSA (skuteczność Świetna) — fokus: lokalizacja, opinie, hot shave |
+| 2026-11-23 | Cybulskiego: dodano nowe słowa kluczowe (4 szt.) |
+| 2026-11-23 | Budżet: Poniatowskiego 33→**16,70 zł/dzień**, Cybulskiego 35→**50,00 zł/dzień** — test na prośbę Dawida (łączny budżet ~2000 zł/mies. bez zmian) |
+| 2026-11-23 | Search Console (barbershoplab.pl + www) podpięty do Google Ads na obu kontach — oczekiwany efekt: pojawienie się favicon w reklamach w ciągu 2 tygodni |
+| 2026-11-23 | Wykryto sklonowaną stronę barbershoplab.live — domena zarejestrowana 2026-08-27, właściciel ukryty (Dynadot privacy), Cloudflare CDN; identyczna treść + linki Booksy; zgłoszenie DMCA do Cloudflare (abuse@cloudflare.com) do zrobienia z prywatnego komputera |
 
 ---
 
@@ -351,3 +389,22 @@ Cennik na stronie (/#services) jest aktualny i poprawny dla lokalu Cybulskiego. 
 - Barbershop LAB Search: 531 kliknięć, 940,54 zł
 - Barbershop LAB 2 Search: 21 kliknięć, 38,44 zł
 - NIP (8942804688) nie pojawił się na fakturze mimo że był w systemie od 12.05 — rozważyć korektę faktury
+
+---
+
+## Sklonowana strona — barbershoplab.live
+
+**Wykryto: 2026-11-23**
+
+Ktoś skopiował całą stronę barbershoplab.pl i wystawił ją pod domeną `barbershoplab.live`. Treść identyczna, linki Booksy wskazują na prawdziwe profile Dawida.
+
+**Dane domeny (WHOIS ICANN):**
+- Zarejestrowana: **2026-08-27** (3 miesiące po starcie kampanii)
+- Wygasa: 2027-08-27
+- Rejestrator: **Dynadot LLC** (USA)
+- Właściciel: ukryty za Dynadot Privacy Service
+- DNS: **Cloudflare** (dara.ns.cloudflare.com)
+
+**Do zrobienia:**
+- [ ] Zgłoszenie DMCA abuse do Cloudflare: `cloudflare.com/abuse/form` → Copyright → `barbershoplab.live` — z prywatnego komputera
+- [ ] Po zdjęciu strony: zgłoszenie do Google Search Console o usunięcie z indeksu
